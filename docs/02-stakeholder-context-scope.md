@@ -4,7 +4,7 @@
 > **Case:** ระบบแจ้งของหาย-พบของในมหาวิทยาลัย  
 > **Version:** v0.1 (Teaching Example)  
 > **Last updated:** 2026-07-13  
-> **Diagram source of truth:** Draw.io file in `diagrams/`)
+> **Diagram source of truth:** Draw.io file in `diagrams/`
 
 ---
 
