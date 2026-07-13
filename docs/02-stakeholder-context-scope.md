@@ -37,9 +37,9 @@
 
 ## 2. Stakeholder Inventory and Map
 
-![Stakeholder Map](../diagrams/stakeholders/w02-stakeholder-map.png)
+![Stakeholder Map](/diagrams/stakeholders/w02-stakeholder-map.png)
 
-> **Source:** [`w02-stakeholder-map.drawio`](../diagrams/stakeholders/w02-stakeholder-map.drawio)
+> **Source:** [`w02-stakeholder-map.drawio`](/diagrams/stakeholders/w02-stakeholder-map.drawio.xml)
 
 | Stakeholder / External System | Role / Current work | Goal / Need | Influence | Interest | Why it matters |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -85,9 +85,9 @@
 
 ## 3. System Context
 
-![System Context Diagram](../diagrams/context/w02-system-context.png)
+![System Context Diagram](/diagrams/context/w02-system-context.png.drawio.png)
 
-> **Source:** [`w02-system-context.drawio`](../diagrams/context/w02-system-context.drawio)
+> **Source:** [`w02-system-context.drawio`](/diagrams/context/contax_diagram.drawio.xml)
 
 ### 3.1 System Boundary
 ขอบเขตของระบบครอบคลุมการแจ้งของหาย การแจ้งพบของ การจัดการภาพถ่ายและคำบรรยายเพื่อความเป็นส่วนตัว การค้นหาและจัดหมวดหมู่ กระบวนการยืนยันความเป็นเจ้าของเบื้องต้น และระบบจัดการสถานะสิ่งของสำหรับเจ้าหน้าที่ ระบบ **ไม่ใช่** ระบบติดตามพัสดุ การเชื่อมต่อกล้องวงจรปิด (CCTV) การยืนยันตัวตนทางกฎหมายเต็มรูปแบบ หรือระบบการขายทอดตลาด/ประมูล
