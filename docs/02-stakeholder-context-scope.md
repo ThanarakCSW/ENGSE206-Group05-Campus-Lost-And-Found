@@ -85,7 +85,7 @@
 
 ## 3. System Context
 
-![System Context Diagram](/diagrams/context/w02-system-context.png.drawio.png)
+![System Context Diagram](/diagrams/context/w02-system-context.png)
 
 > **Source:** [`w02-system-context.drawio`](/diagrams/context/contax_diagram.drawio.xml)
 
