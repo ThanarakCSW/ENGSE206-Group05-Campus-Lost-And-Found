@@ -2,7 +2,7 @@
 
 - Team / Case: Group05 — Case 05: Campus Lost and Found
 - Repository URL: https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found
-- Submission commit (hash or commit message): Submit (w03): Complete data collection plan and interview documentation.
+- Submission commit (hash or commit message): submit (w03): Complete data collection plan and interview documentation
 - Artefact paths:
   - `docs/03-elicitation-plan.md`
   - `docs/03-interview-guide.md`
