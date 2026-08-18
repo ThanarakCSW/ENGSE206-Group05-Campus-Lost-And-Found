@@ -1,6 +1,4 @@
-# Team Worklog
-
-> ทุกคนเติมอย่างน้อย 1 รายการต่อสัปดาห์เมื่อมีงานของรายวิชา
+# Week 01-05 Worklog
 
 | Week | Date | Name | Role | Files / Task | Evidence / Commit | Time spent | Reflection |
 |---|---|---|---|---|---|---:|---|
