@@ -88,7 +88,8 @@ Tag | Related EO/OQ | Confidence | Interpretation | Follow-up/Owner
 | **Q-06** | ผู้ดูแล IT / ผู้บริหาร | ในมุมมองของการจัดการข้อมูล ข้อมูลใดของสิ่งของหรือภาพถ่ายที่ไม่ควรแสดงสู่สาธารณะ ปัจจุบันมีนโยบายหรือวิธีจัดการเรื่องนี้อย่างไร? | Open | เพื่อวางแผนทำ Image Moderation และป้องกันการละเมิด PDPA | EO-01, EO-03 (OQ-01, OQ-03) | นโยบายการเซ็นเซอร์ข้อมูลส่วนบุคคล, กฎ Data Retention |
 | **Q-07** | ผู้พบของ | ขอให้เล่าเหตุการณ์ล่าสุดที่คุณบังเอิญเจอของคนอื่นตกอยู่ คุณจัดการกับของชิ้นนั้นอย่างไร อะไรคือสาเหตุหลักที่ทำให้คุณตัดสินใจนำหรือไม่นำของไปฝากที่จุดรับฝาก? | Open | เพื่อตรวจสอบข้อสมมติ (Assumption) ว่าผู้ใช้ยินดีเอาของไปส่งจริงหรือไม่ หากมีอุปสรรคคืออะไร | EO-06 (AS-01) | พฤติกรรมจริงในอดีต (Past behavior), อุปสรรคด้านความสะดวก/เวลา |
 | **Q-08** | ผู้ทำของหาย | ตอนที่คุณทำของหายครั้งล่าสุด คุณมีวิธีตามหาอย่างไร สิ่งที่คุณกังวลที่สุดระหว่างที่ยังหาของไม่เจอคืออะไร? | Open | เพื่อดูพฤติกรรมการค้นหาปัจจุบัน และประเมินระดับความกังวลด้าน Privacy | EO-07 (AS-02) | ช่องทางที่ใช้ตามหา, ความกลัวข้อมูลส่วนตัวหลุด |
-| **Q-09** | ทุกคน (Validation) | "จากที่เราได้พูดคุยกันมาทั้งหมด ทีมงานขออนุญาตสรุปเพื่อทวนความเข้าใจนะครับ... ตรงนี้มีจุดไหนที่ทางเราเข้าใจคลาดเคลื่อน หรือมีข้อเสนอแนะ/ข้อควรระวังเพิ่มเติมไหมครับ?" | Validation | เพื่อให้แน่ใจว่าทีมตีความสิ่งที่ Stakeholder สื่อสารได้ถูกต้อง และเปิดโอกาสให้เขาเสริมประเด็นที่ตกหล่น | All EOs | คำยืนยันจาก Stakeholder (Confirmation) หรือข้อมูลใหม่ |
+| **Q-09** | ผู้ทำของหาย / เจ้าหน้าที่ | ในกรณีที่ผู้ทำของหายไม่สามารถเดินทางมาติดต่อขอรับสิ่งของคืนด้วยตนเองได้ ปัจจุบันมีหลักเกณฑ์หรือแนวปฏิบัติอย่างไรในการตรวจสอบเอกสาร/การมอบอำนาจ เพื่อป้องกันการแอบอ้างสวมรอยรับของแทน? | Open / Probe | เพื่อหาข้อกำหนดในการยืนยันตัวตนกรณีการมอบอำนาจและป้องกันมิจฉาชีพสวมรอย | EO-02 (OQ-02) | หลักเกณฑ์การมอบอำนาจ, เอกสารยืนยันตัวตนกรณีรับแทน |
+| **Q-10** | ทุกคน (Validation) | "จากที่เราได้พูดคุยกันมาทั้งหมด ทีมงานขออนุญาตสรุปเพื่อทวนความเข้าใจนะครับ... ตรงนี้มีจุดไหนที่ทางเราเข้าใจคลาดเคลื่อน หรือมีข้อเสนอแนะ/ข้อควรระวังเพิ่มเติมไหมครับ?" | Validation | เพื่อให้แน่ใจว่าทีมตีความสิ่งที่ Stakeholder สื่อสารได้ถูกต้อง และเปิดโอกาสให้เขาเสริมประเด็นที่ตกหล่น | All EOs | คำยืนยันจาก Stakeholder (Confirmation) หรือข้อมูลใหม่ |
 
 ### 4.3 Anti-Bias Controls & Question Rehearsal Revisions
 
@@ -132,7 +133,7 @@ Tag | Related EO/OQ | Confidence | Interpretation | Follow-up/Owner
 2. **Role Isolation:** จำลอง Stakeholder 1 บทบาทต่อ 1 Session ป้องกันความรู้ข้ามบทบาท
 3. **No Solution Invention:** ห้าม AI หรือทีมสร้างนโยบาย ตัวเลข หรือสถิติที่ไม่มีในเอกสารขึ้นมาเอง หากไม่มีข้อมูล ให้บันทึกเป็น `OQ`
 4. **Data Separation:** Note-taker ต้องจด Statement (ข้อความจริง) แยกออกจาก Interpretation (การตีความของทีม)
-5. **Validation Step:** ปิด Session ด้วยคำถามทวนความเข้าใจ (Q-09) และสรุปรายการที่ยังเป็นข้อสงสัย (`OQ`) เสมอ
+5. **Validation Step:** ปิด Session ด้วยคำถามทวนความเข้าใจ (Q-10) และสรุปรายการที่ยังเป็นข้อสงสัย (`OQ`) เสมอ
 
 ---
 
@@ -140,7 +141,7 @@ Tag | Related EO/OQ | Confidence | Interpretation | Follow-up/Owner
 
 | Risk ID | Risk | Impact | Mitigation Control | Readiness Status |
 |---|---|---|---|---|
-| R-01 | Interview guide ถามหลายประเด็นในข้อเดียว | ข้อมูลไม่ครบ/เปรียบเทียบยาก | แยกคำถามหลักและ Probe (Q-01 ถึง Q-08) ชัดเจน | Closed |
+| R-01 | Interview guide ถามหลายประเด็นในข้อเดียว | ข้อมูลไม่ครบ/เปรียบเทียบยาก | แยกคำถามหลักและ Probe (Q-01 ถึง Q-09) ชัดเจน | Closed |
 | R-02 | Stakeholder เสนอ Solution แล้วทีมบันทึกเป็น Requirement ทันที | Solution fixation | ติดแท็ก `PS`; ใช้คำถามเจาะหา Underlying Need | Controlled |
 | R-03 | ตัวเลขหรือนโยบายจากการจำลองถูกนำไปใช้เป็นข้อเท็จจริง | False authority | ติดแท็ก `OQ` หากไม่มีเอกสารอ้างอิง; ขอเอกสารจาก Policy Owner | Controlled |
 | R-04 | ข้อมูลขัดแย้งระหว่าง Stakeholders ถูกสรุปรวมโดยไม่บันทึกความขัดแย้ง | สูญเสีย Conflict Evidence | แยก E-ID ชัดเจนและบันทึกใน Issue & Conflict List | Controlled |
@@ -150,7 +151,7 @@ Tag | Related EO/OQ | Confidence | Interpretation | Follow-up/Owner
 
 - [x] EO ทุกข้อ (`EO-01..EO-07`) เชื่อมโยงกับ OQ/AS และ Decision Points ชัดเจน
 - [x] Elicitation Plan (`EP-01..EP-05`) ระบุ Stakeholder, Method, Evidence, Owner, Timing, Risk และ Exit Criteria ครบถ้วน
-- [x] มี Interview Guide 9 ข้อ พร้อมชุดคำถามเจาะ (Probes) และ Validation Script
+- [x] มี Interview Guide 10 ข้อ พร้อมชุดคำถามเจาะ (Probes) และ Validation Script
 - [x] กำหนด Evidence Schema และ Tags (`CF`, `SN`, `CT`, `OP`, `AS`, `PS`, `OQ`)
 - [x] มี Anti-bias controls, Consent Script, Role isolation และ Human review
 - [x] ระบุข้อที่ต้องคงสถานะ Unresolved (`OQ`) หากไม่มี Authority ยืนยัน
@@ -160,3 +161,4 @@ Tag | Related EO/OQ | Confidence | Interpretation | Follow-up/Owner
 ## 7. Handoff
 
 ผลลัพธ์จากแผนนี้จะถูกนำไปใช้ใน Week 04 Simulation ผ่านกิจกรรม `EP-01..EP-05` และ [Interview Guide](03-interview-guide.md) เพื่อจัดทำ **Evidence Log (`E-*`)**, สกัดความขัดแย้งลงใน **Negotiation Record (`C-*`)** และแปลงเป็น **Requirement Candidates (`RC-*`)** ในขั้นตอนถัดไป
+
