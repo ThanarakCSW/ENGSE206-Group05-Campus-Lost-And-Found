@@ -1,10 +1,10 @@
-# Team Worklog: Campus Lost and Found (Group 05)
+# Team Worklog: Campus Lost and Found (Group 05) 
 
 > ทุกคนเติมอย่างน้อย 1 รายการต่อสัปดาห์เมื่อมีงานของรายวิชา
 
 | Date | Week | Member | Role | Task / Contribution | Artefact / File Changed | Commit / Evidence Link | Time Spent | Status |
 |---|---:|---|---|---|---|---|---:|---|
-| 2026-07-05 | 1 | ธนรัก ชุ่มสวัสดิ์ | Facilitator / Requirements Lead | วิเคราะห์ Case-05 จัดทำภาพรวมโครงงาน, scope, success criteria และแยก Facts, Assumptions, Open Questions | `docs/00-project-profile.md`, `docs/01-problem-brief-v0.1.md` | Commit: baseline init | 3.0 hr | Done |
+| 2026-07-05 | 1 | ธนรัก ชุ่มสวัสดิ์ | Facilitator / Requirements Lead | วิเคราะห์ Case-05 จัดทำภาพรวมโครงงาน, scope, success criteria และแยก Facts, Assumptions, Open Questions | `docs/00-project-profile.md`, `docs/01-problem-brief-v0.1.md` | Commit: w01 project-profile | 3.0 hr | Done |
 | 2026-07-05 | 1 | นรบดี บุญเลิศ | Scribe / Reviewer | สรุป Problem Statement, Pain Points (PP-01..PP-05), Stakeholders และ Initial User Needs | `docs/01-problem-brief-v0.1.md` | Commit: problem brief v0.1 | 2.0 hr | Done |
 | 2026-07-13 | 2 | ธนรัก ชุ่มสวัสดิ์ | Facilitator / Submit | จัดทำเอกสาร Stakeholder Context, Scope, In/Out Scope และ Peer Feedback | `docs/02-stakeholder-context-scope.md`, `feedback/week-02-peer-feedback.md` | Commit: w02 context & scope | 3.5 hr | Done |
 | 2026-07-13 | 2 | นรบดี บุญเลิศ | Scribe / Designer | สร้าง System Context Diagram และ Stakeholder Map | `diagrams/context/w02-system-context.drawio.xml`, `diagrams/stakeholders/w02-stakeholder-map.drawio.xml` | Commit: w02 diagrams | 3.0 hr | Done |

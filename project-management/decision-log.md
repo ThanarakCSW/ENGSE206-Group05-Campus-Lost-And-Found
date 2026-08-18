@@ -1,4 +1,4 @@
-# Decision Log: Campus Lost and Found
+# Decision Log: Campus Lost and Found 
 
 > ใช้สำหรับการตัดสินใจที่มีผลต่อ scope, requirement, architecture, UX/UI หรือ detailed design
 

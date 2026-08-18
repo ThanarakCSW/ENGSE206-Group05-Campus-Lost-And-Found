@@ -2,7 +2,7 @@
 
 > **Case Project:** Campus Lost and Found (Case-05)  
 > **Review Date:** 18 สิงหาคม 2569  
-> **Reviewing Sub-team / Peer Group:** Group 05 Cross-Reviewer Team  
+> **Reviewing Sub-team / Peer Group:** Group 01 Cross-Reviewer Team  
 > **Target Artefacts Reviewed:** `docs/05-requirement-backlog.md`, `docs/08-validation-traceability.md`, `docs/04-evidence-log.md`
 
 ---
@@ -33,5 +33,5 @@
 ## 3. สรุปผลการประเมิน (Gate Assessment Result)
 
 - **สถานะ:** **ผ่านเกณฑ์ Peer Cross-Review 100% ครบถ้วนทุกข้อ (PASS ALL ITEMS)**
-- **ผู้ตรวจสอบ (Cross-Reviewers):** นรบดี บุญเลิศ (Reviewer Sub-team A), ธนรัก ชุ่มสวัสดิ์ (Reviewer Sub-team B)
+- **ผู้ตรวจสอบ (Cross-Reviewers):** นายปริษฎา  สุทธดุก , นายวรสิทธิ์  บุญยปรีดี
 - **วันที่ยืนยันผล:** 18 สิงหาคม 2569
