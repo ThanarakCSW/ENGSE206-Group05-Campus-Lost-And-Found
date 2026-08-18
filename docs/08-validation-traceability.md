@@ -14,7 +14,7 @@
 | Artefact Health Check | `docs/01` to `docs/05` | Facilitator, Scribe | Completeness, Recency, Structural Alignment | `../evidence/week-05/baseline-review/health-check.md` |
 | Traceability Audit | `docs/04` -> `docs/05` | Traceability Auditor | 100% Must Requirements traceable to E-ID & Stakeholder | Section 3 below & `peer-cross-review.md` |
 | Quality & MoSCoW Audit | `docs/05-requirement-backlog.md` | Quality Checker | Verifiable, Unambiguous, Atomic, Rationalized Priority | Section 2 below & `health-check.md` |
-| Peer Cross-Review | All Week 05 Artefacts | Cross-Review Team (Sub-team A & B) | 5-point Checklist Pass, ID-referenced feedback | `../evidence/week-05/baseline-review/peer-cross-review.md` |
+| Peer Cross-Review | All Week 05 Artefacts | Cross-Review Team (Group 01) | 5-point Checklist Pass, ID-referenced feedback | `../evidence/week-05/baseline-review/peer-cross-review.md` |
 | Baseline Gate Lock | Repo State & Tag | Whole Team | All Gate criteria met, Git tagged `baseline-v1.0` | `project-management/decision-log.md` |
 
 ---
@@ -33,7 +33,7 @@
 
 ---
 
-## 3. Full Traceability Matrix (Backward & Forward Traceability)
+## 3. Traceability Matrix
 
 | Req ID | Requirement Statement (Baseline v1.0) | Priority | Primary Stakeholder | Evidence Trace (E-ID) | Need Trace (N-ID / RC-ID) | Verification / Review Method |
 |---|---|---|---|---|---|---|
@@ -52,7 +52,7 @@
 
 ---
 
-## 4. 3 Must Requirements Audit Form (Traceability Check Form)
+## 4. 3 Traceability Check Form
 
 | Req ID | มาจาก Evidence (E-xx) | ผูกกับ Stakeholder | Need / Candidate (RC) | ลากครบ? | Audit Result & Notes |
 |---|---|---|---|---|---|

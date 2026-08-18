@@ -74,7 +74,7 @@
 - [x] Scope ไม่บวมเกินขอบเขตของ Case Card (Case-05)
 - [x] ล็อกสถานะเป็น Baseline v1.0 พร้อมส่งต่อ Week 06
 
-## 7. Week06 Handoff Plan
+## 7. Week06 Handoff Plan 
 
 | Week06 Artefact Target | Baseline Input Requirement |
 |---|---|
