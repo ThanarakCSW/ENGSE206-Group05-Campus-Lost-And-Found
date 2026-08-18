@@ -1,7 +1,18 @@
-# Team Worklog
+# Team Worklog: Campus Lost and Found (Group 05)
 
 > ทุกคนเติมอย่างน้อย 1 รายการต่อสัปดาห์เมื่อมีงานของรายวิชา
 
-| Date | Week | Member | Task / Contribution | Artefact / File Changed | Commit / Evidence Link | Time Spent | Status |
-|---|---:|---|---|---|---|---:|---|
-| [date] | 1 | [ชื่อ] | [ทำอะไร] | `docs/01-...` | [commit hash / link] | [x] hr | Done / In progress |
+| Date | Week | Member | Role | Task / Contribution | Artefact / File Changed | Commit / Evidence Link | Time Spent | Status |
+|---|---:|---|---|---|---|---|---:|---|
+| 2026-07-05 | 1 | ธนรัก ชุ่มสวัสดิ์ | Facilitator / Requirements Lead | วิเคราะห์ Case-05 จัดทำภาพรวมโครงงาน, scope, success criteria และแยก Facts, Assumptions, Open Questions | `docs/00-project-profile.md`, `docs/01-problem-brief-v0.1.md` | Commit: baseline init | 3.0 hr | Done |
+| 2026-07-05 | 1 | นรบดี บุญเลิศ | Scribe / Reviewer | สรุป Problem Statement, Pain Points (PP-01..PP-05), Stakeholders และ Initial User Needs | `docs/01-problem-brief-v0.1.md` | Commit: problem brief v0.1 | 2.0 hr | Done |
+| 2026-07-13 | 2 | ธนรัก ชุ่มสวัสดิ์ | Facilitator / Submit | จัดทำเอกสาร Stakeholder Context, Scope, In/Out Scope และ Peer Feedback | `docs/02-stakeholder-context-scope.md`, `feedback/week-02-peer-feedback.md` | Commit: w02 context & scope | 3.5 hr | Done |
+| 2026-07-13 | 2 | นรบดี บุญเลิศ | Scribe / Designer | สร้าง System Context Diagram และ Stakeholder Map | `diagrams/context/w02-system-context.drawio.xml`, `diagrams/stakeholders/w02-stakeholder-map.drawio.xml` | Commit: w02 diagrams | 3.0 hr | Done |
+| 2026-08-03 | 3 | ธนรัก ชุ่มสวัสดิ์ | Interviewer / Facilitator | ออกแบบคู่มือสัมภาษณ์ ซ้อมคำถาม และทำเอกสารสรุปผล rehearsal | `docs/03-interview-guide.md`, `evidence/week-03/question-rehearsal-notes.md` | Commit: w03 interview prep | 3.0 hr | Done |
+| 2026-08-03 | 3 | นรบดี บุญเลิศ | Elicitation Planner | เชื่อม Open Questions กับ Stakeholder, Elicitation Technique และ Expected Evidence | `docs/03-elicitation-plan.md` | Commit: w03 elicitation plan | 3.0 hr | Done |
+| 2026-08-04 | 4 | ธนรัก ชุ่มสวัสดิ์ | Evidence Owner / Facilitator | สรุป Simulation Evidence (E-01..E-05), จัดทำ Negotiation Record และทางเลือก Provisional | `docs/04-evidence-log.md` | Commit: w04 evidence & negotiation | 2.5 hr | Done |
+| 2026-08-04 | 4 | นรบดี บุญเลิศ | Conflict Analyst / Reviewer | วิเคราะห์ Issue/Conflict (C-01..C-03) และจัดทำ Requirement Candidates (RC-01..RC-05) | `docs/04-evidence-log.md` | Commit: w04 candidates | 2.5 hr | Done |
+| 2026-08-11 | 5 | ธนรัก ชุ่มสวัสดิ์ | Facilitator / Traceability Auditor | จัดลำดับความสำคัญด้วย MoSCoW, ตรวจสอบ Scope ไม่ให้เกิน Case Card และจัดเตรียม Backlog | `docs/05-requirement-backlog.md` | Commit: w05 backlog draft | 2.5 hr | Done |
+| 2026-08-11 | 5 | นรบดี บุญเลิศ | Quality Checker / Scribe | แยกประเภท FR, NFR, BR, Issue และเชื่อมโยง Need Trace กับ Evidence | `docs/05-requirement-backlog.md` | Commit: w05 trace mapping | 2.5 hr | Done |
+| 2026-08-18 | 5 | ธนรัก ชุ่มสวัสดิ์ | Facilitator / Traceability Auditor | ดำเนินการช่วงที่ 0 (Setup), ช่วงที่ 2 (Traceability Audit) และช่วงที่ 6 (Readiness Gate Lock) ตรวจสอบสาย Traceability ลากครบ 100% | `docs/08-validation-traceability.md`, `evidence/week-05/baseline-review/` | Commit: docs: baseline review & gate lock | 2.0 hr | Done |
+| 2026-08-18 | 5 | นรบดี บุญเลิศ | Quality Checker / Scribe / Timekeeper | ดำเนินการช่วงที่ 1 (Health Check), ช่วงที่ 3 (Quality & MoSCoW Check) และช่วงที่ 4 (Peer Cross-Review) ปรับข้อความให้วัดผลได้ และบันทึก Decision Log | `docs/05-requirement-backlog.md`, `project-management/decision-log.md`, `feedback/15-individual-reflection.md` | Commit: docs: quality check & decision log | 2.0 hr | Done |
