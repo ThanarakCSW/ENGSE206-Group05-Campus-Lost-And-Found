@@ -9,7 +9,6 @@
   - นรบดี บุญเลิศ - 68543210013-7
 - **วันที่สอบ:** 25 Aug 2026
 - **Mini Twist ที่เลือก:** ( ) A. New Stakeholder   (X) B. Cut Scope
-
 ---
 
 ## ส่วนที่ 1 — Core Twist: Accessibility + Offline (บังคับ)
