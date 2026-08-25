@@ -1,23 +1,24 @@
 # Team Worklog — งานสอบกลุ่ม
 
-- **กลุ่มที่:** [เลขกลุ่ม]
-- **Case เดิม:** [ชื่อ case]
+- **กลุ่มที่:** [05]
+- **Case เดิม:** [Campus-Lost-And-Found]
 
 ## บทบาทในทีมวันนี้
 | สมาชิก | บทบาท (Facilitator / Scribe / Interviewer / Reporter) |
 |---|---|
-| | |
-| | |
+| ธนรัก ชุ่มสวัสดิ์ | Facilitator/Interviewer |
+| นรบดี บุญเลิศ | Scribe/Reporter |
 | | |
 
 ## ใครทำอะไรในแต่ละช่วง
 | ช่วง | เวลา | สิ่งที่ทำ | ผู้รับผิดชอบหลัก |
 |---|---|---|---|
-| Setup | | เปิด branch, สร้างโฟลเดอร์ | |
-| Frame + Scope | | | |
-| AI Interview | | | |
-| Analyze | | | |
-| Commit + PR | | | |
+| Setup | 20 น.| เปิด branch, สร้างโฟลเดอร์ | นรบดี บุญเลิศ |
+| Frame + Scope | 30 น. | ปรับ problem frame + stakeholder + scope ให้เข้ากับ Twist  | ธนรัก ชุ่มสวัสดิ์ |
+| AI Interview | 45 น.  | สร้างบริบทให้ Gemini เป็น stakeholder แล้วสัมภาษณ์ เก็บ evidence  | ธนรัก ชุ่มสวัสดิ์ |
+| Analyze | 40 น.  | จำแนก จัดลำดับ ทำ mini backlog ของ Twist  | ธนรัก ชุ่มสวัสดิ์/นรบดี บุญเลิศ |
+| Commit + PR | 25 น.  | ตรวจ trace ครบ, commit, push branch, เปิด Pull Request  | นรบดี บุญเลิศ |
+| Oral Defense | 20 น. | กลุ่มละ ~4 นาที ตอบคำถามสดจากอาจารย์ | ธนรัก ชุ่มสวัสดิ์/นรบดี บุญเลิศ |
 
 ## Peer contribution (แต่ละคนกรอกของตัวเอง)
 > ให้คะแนนเพื่อนร่วมกลุ่มการมีส่วนร่วม 1–5 (ไม่รวมตัวเอง) พร้อมเหตุผลสั้น 1 บรรทัด
