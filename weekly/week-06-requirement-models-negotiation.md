@@ -10,16 +10,17 @@
 
 ## Checklist
 
-- [ ] เขียน user stories/use cases ที่ครอบคลุม workflow หลัก
-- [ ] เพิ่ม acceptance criteria
-- [ ] สร้าง use case/activity/domain model ที่จำเป็น
-- [ ] บันทึก trade-off หรือ requirement ที่ deferred
+- [x] เขียน user stories/use cases ที่ครอบคลุม workflow หลัก
+- [x] เพิ่ม acceptance criteria
+- [x] สร้าง use case/activity/domain model ที่จำเป็น
+- [x] บันทึก trade-off หรือ requirement ที่ deferred
 
 ## หลักฐานที่ควรมี
 
-- [ ] commit history ที่เห็นการมีส่วนร่วมของสมาชิก
-- [ ] worklog อัปเดตใน `project-management/team-worklog.md`
-- [ ] evidence/meeting note เมื่อกิจกรรมมีการเก็บข้อมูลหรือ review
+- [x] commit history ที่เห็นการมีส่วนร่วมของสมาชิก
+- [x] worklog อัปเดตใน `project-management/team-worklog.md`
+- [x] evidence/meeting note เมื่อกิจกรรมมีการเก็บข้อมูลหรือ review
+
 
 ## Commit Message ตัวอย่าง
 
