@@ -4,7 +4,7 @@
 
 ## 1. Use Case Diagram
 
-![Use Case Diagram](use_case.drawio.png)
+![Use Case Diagram](usecase.png)
 
 ## 2. รายการ Use Case และการเชื่อมโยง Requirement
 
