@@ -47,6 +47,10 @@
 | ISSUE-CLF-01 | E-05 / C-01 | E-05, C-01 -> N-05 | ยังไม่มีนโยบายอนุมัติระยะเวลาจัดเก็บและวิธีทำลาย/บริจาคสิ่งของตกค้างเกินกำหนดจากผู้บริหาร | Issue / Policy Gap | Won't yet | ห้ามสร้าง policy เอง ต้องเก็บเป็น Open Question ถามผู้บริหาร | Hold / Open Question | นโยบาย retention period สรุปกี่วัน | Follow-up only |
 | ISSUE-CLF-02 | E-03 / C-02 | E-03, C-02 -> N-03 | ยังไม่ได้รับการยืนยันทางเลือกพัฒนาระบบ AI Auto-censor ภาพถ่าย เทียบกับการตรวจอนุมัติภาพโดยเจ้าหน้าที่ | Issue / Technical Gap | Won't yet | เป็นการตัดสินใจเชิงเทคโนโลยีและงบประมาณของ IT Admin | Hold / Open Question | IT เลือกสถาปัตยกรรมแบบใด | Follow-up only |
 
+```
+Requirement -> 14 requirement, Functional requirement -> 8 requirement, Non-functional requirement -> 2 requirement, Business Rule -> 1 requirement, Issue -> 2 requirement
+```
+
 ## 4. Priority Summary
 
 | Priority | Count | Requirement IDs | เหตุผลรวม |

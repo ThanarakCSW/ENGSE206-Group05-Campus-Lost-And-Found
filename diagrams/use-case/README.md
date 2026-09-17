@@ -10,12 +10,12 @@
 
 | Use Case ID | ชื่อ Use Case | Primary Actor | เชื่อมโยง Requirement | รายละเอียดในเอกสาร |
 |---|---|---|---|---|
-| **UC-01** | Report Lost Item | ผู้ทำของหาย | `FR-CLF-02` | [06-requirement-models.md](../../docs/06-requirement-models.md#3-use-case-list) |
-| **UC-02** | Report Found Item / Tip-off | ผู้พบของ | `FR-CLF-03`, `BR-CLF-01` | [06-requirement-models.md](../../docs/06-requirement-models.md#uc-02--report-found-item--tip-off--privacy-handling-แจ้งพบของแจ้งเบาะแส) |
-| **UC-03** | Search & Filter Found Items | ผู้ใช้งานทั่วไป | `FR-CLF-06`, `BR-CLF-01` | [06-requirement-models.md](../../docs/06-requirement-models.md#3-use-case-list) |
-| **UC-04** | Claim Ownership & Submit Evidence | ผู้ทำของหาย | `FR-CLF-04`, `NFR-CLF-01` | [06-requirement-models.md](../../docs/06-requirement-models.md#uc-04--claim-ownership--submit-evidence-ยื่นคำร้องและส่งหลักฐานยืนยันเจ้าของ) |
-| **UC-05** | Verify Claim & Handover Item | เจ้าหน้าที่ศูนย์รับของหาย | `FR-CLF-01`, `FR-CLF-05` | [06-requirement-models.md](../../docs/06-requirement-models.md#uc-05--verify-claim--handover-item-ตรวจสอบสิทธิ์และส่งมอบสิ่งของคืน) |
-| **UC-06** | Manage Inventory & Unclaimed Items | เจ้าหน้าที่ศูนย์รับของหาย | `FR-CLF-01`, `FR-CLF-08` | [06-requirement-models.md](../../docs/06-requirement-models.md#3-use-case-list) |
+| **UC-01** | Report Lost Item | ผู้ทำของหาย | `FR-CLF-02`, `NFR-CLF-02`, `US-01`, `US-10`, `AC-01`, `AC-09` | [06-requirement-models.md](../../docs/06-requirement-models.md#uc-01--report-lost-item-แจ้งของหาย) |
+| **UC-02** | Report Found Item / Tip-off | ผู้พบของ | `FR-CLF-03`, `BR-CLF-01`, `NFR-CLF-02`, `US-02`, `US-06`, `US-10`, `AC-02`, `AC-03`, `AC-09` | [06-requirement-models.md](../../docs/06-requirement-models.md#uc-02--report-found-item--tip-off--privacy-handling-แจ้งพบของแจ้งเบาะแส) |
+| **UC-03** | Search & Filter Found Items | ผู้ใช้งานทั่วไป | `FR-CLF-06`, `BR-CLF-01`, `NFR-CLF-02`, `US-07`, `US-06`, `US-10`, `AC-03`, `AC-04`, `AC-09` | [06-requirement-models.md](../../docs/06-requirement-models.md#uc-03--search--filter-found-items-ค้นหาและคัดกรองรายการสิ่งของ) |
+| **UC-04** | Claim Ownership & Submit Evidence | ผู้ทำของหาย | `FR-CLF-04`, `NFR-CLF-01`, `BR-CLF-01`, `US-04`, `AC-05` | [06-requirement-models.md](../../docs/06-requirement-models.md#uc-04--claim-ownership--submit-evidence-ยื่นคำร้องและส่งหลักฐานยืนยันเจ้าของ) |
+| **UC-05** | Verify Claim & Handover Item | เจ้าหน้าที่ศูนย์รับของหาย | `FR-CLF-01`, `FR-CLF-05`, `FR-CLF-07`, `NFR-CLF-01`, `US-03`, `US-05`, `US-08`, `AC-06`, `AC-07` | [06-requirement-models.md](../../docs/06-requirement-models.md#uc-05--verify-claim--handover-item-ตรวจสอบสิทธิ์และส่งมอบสิ่งของคืน) |
+| **UC-06** | Manage Inventory & Unclaimed Items | เจ้าหน้าที่ศูนย์รับของหาย | `FR-CLF-01`, `FR-CLF-08`, `ISSUE-CLF-01`, `US-03`, `US-09`, `AC-06`, `AC-08` | [06-requirement-models.md](../../docs/06-requirement-models.md#uc-06--manage-inventory--unclaimed-items-จัดการคลังและติดตามสิ่งของตกค้าง) |
 
 ## 3. Checklist คุณภาพ
 
