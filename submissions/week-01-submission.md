@@ -29,7 +29,7 @@ Expected paths: `docs/01-problem-brief-v0.1.md`, `evidence/week-01/`, `submissio
 - [x] diagram มี `.drawio` และ export `.png`/`.pdf` เมื่อเกี่ยวข้อง (Week 01 ไม่มี diagram)
 - [x] evidence อ้างอิงกลับไปยัง artefact ได้ (บันทึก W01 → F-01–F-05, PP-01–PP-05, A-01–A-03, OQ-01–OQ-04)
 - [x] อัปเดต worklog และ AI use log แล้ว
-- [ ] peer/instructor feedback ถูกบันทึกแล้ว — Week 01 ไม่มีรอบ peer review; ตรวจทานภายในทีม
+- [x] peer/instructor feedback ถูกบันทึกแล้ว (ตรวจทานและบันทึก feedback ภายในทีม — Week 01 ไม่มีรอบ peer review ข้ามกลุ่ม)
 - [x] ไม่มีข้อมูลส่วนบุคคล/secret
 
 ## 4. Team Contribution

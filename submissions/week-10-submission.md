@@ -6,7 +6,7 @@
 | Assignment URL | https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-10-design-strategy/assignment-contract.md |
 | Case ID / URL | Case 05 — Campus Lost and Found · https://github.com/se-rmutl/engse206-lab/blob/main/cases/05-campus-lost-and-found.md |
 | Team | Group 05 — ENGSE206-Group05-Campus-Lost-And-Found |
-| Submission commit hash | `dc87cd1` / `main` |
+| Submission commit hash | `794ebf0` |
 
 ## Artefact links
 
