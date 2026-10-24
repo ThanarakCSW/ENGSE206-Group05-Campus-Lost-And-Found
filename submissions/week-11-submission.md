@@ -6,7 +6,7 @@
 | Assignment URL | https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-11-conceptual-architecture/assignment-contract.md |
 | Case ID / URL | Case 05 — ระบบแจ้งของหาย-พบของในมหาวิทยาลัย (Campus Lost and Found) · ดู `CASE_CARD.md` |
 | Team | Group 05 — ENGSE206-Group05-Campus-Lost-And-Found |
-| Submission commit hash | `ba193bc` |
+| Submission commit hash | `fe5a0a0` |
 
 ## Artefact links
 
