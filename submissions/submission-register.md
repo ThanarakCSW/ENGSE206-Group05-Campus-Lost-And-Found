@@ -15,7 +15,7 @@
 
 | ชื่อ–สกุล | GitHub username และชื่อทุกชื่อที่ขึ้นใน commit | บทบาทหลัก |
 |---|---|---|
-| ธนรัก ชุ่มสวัสดิ์ | `ThanarakCSW`, `THANARAK` | Facilitator / Requirements Lead / Traceability Auditor |
+| ธนรัก ชุ่มสวัสดิ์ | `ThanarakCSW`, `THANARAK`, `Your English Name` | Facilitator / Requirements Lead / Traceability Auditor |
 | นรบดี บุญเลิศ | `nara-bodee`, `Narabodee`, `Narabodee Boonlead` | Quality Checker / Scribe / Timekeeper / Designer |
 
 ## งานรายสัปดาห์

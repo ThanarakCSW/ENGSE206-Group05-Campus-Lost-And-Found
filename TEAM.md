@@ -20,7 +20,7 @@
 
 | ชื่อ-นามสกุล | GitHub username (ทุกชื่อที่ใช้ commit) | บทบาทหลัก | รับผิดชอบเริ่มต้น | หลักฐานการทำงานที่คาดหวัง |
 |---|---|---|---|---|
-| ธนรัก ชุ่มสวัสดิ์ | `ThanarakCSW` (commit names: `ThanarakCSW`, `THANARAK`) | Facilitator / Requirements Lead / Traceability Auditor | ประสานงานภาพรวม, กำกับ Scope, ตรวจสอบ Traceability และจัดทำเอกสารความต้องการหลัก | `docs/01`, `docs/05`, `docs/07`, `docs/08`, `worklog` |
+| ธนรัก ชุ่มสวัสดิ์ | `ThanarakCSW` (commit names: `ThanarakCSW`, `THANARAK`, `Your English Name`) | Facilitator / Requirements Lead / Traceability Auditor | ประสานงานภาพรวม, กำกับ Scope, ตรวจสอบ Traceability และจัดทำเอกสารความต้องการหลัก | `docs/01`, `docs/05`, `docs/07`, `docs/08`, `worklog` |
 | นรบดี บุญเลิศ | `nara-bodee` (commit names: `Narabodee`, `Narabodee Boonlead`) | Quality Checker / Scribe / Timekeeper / Designer | ตรวจสอบคุณภาพความต้องการ (Verifiable, Unambiguous), ออกแบบแบบจำลองและไดอะแกรม, บันทึกข้อตัดสินใจ | `diagrams/`, `docs/02`, `docs/03`, `docs/06`, `decision-log` |
 
 ## กติกาทีม
