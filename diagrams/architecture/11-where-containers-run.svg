@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 850" width="1100" height="850" style="background-color:#ffffff; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#173B65" />
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <text x="30" y="40" fill="#173B65" font-size="26" font-weight="bold">แต่ละ container รันที่ไหน — และใครควบคุม (เส้นแบ่งความไว้ใจ)</text>
+  <text x="30" y="65" fill="#718096" font-size="15">Campus Lost and Found · สถาปัตยกรรมระดับ Container (DEC-01 &amp; DEC-02)</text>
+
+  <!-- Left Side: User Device -->
+  <g transform="translate(30, 95)">
+    <rect x="0" y="0" width="460" height="680" rx="10" fill="#FFF9ED" stroke="#D89715" stroke-width="2.5" stroke-dasharray="6 4"/>
+    <text x="30" y="40" fill="#172333" font-size="22" font-weight="bold">เครื่องของผู้ใช้ (Client Device)</text>
+    <text x="30" y="65" fill="#718096" font-size="15">ผู้ใช้ควบคุม — เปิดดูและแก้ไขโค้ด/สคริปต์ฝั่งนี้ได้</text>
+
+    <!-- Web App Box -->
+    <g transform="translate(30, 90)" filter="url(#shadow)">
+      <rect x="0" y="0" width="400" height="170" rx="8" fill="#FFFFFF" stroke="#008699" stroke-width="2.5"/>
+      <rect x="0" y="0" width="400" height="35" rx="8" fill="#F1F7FA" stroke="#008699" stroke-width="1"/>
+      <circle cx="25" cy="18" r="5" fill="#CBD5E0"/>
+      <circle cx="42" cy="18" r="5" fill="#CBD5E0"/>
+      <circle cx="59" cy="18" r="5" fill="#CBD5E0"/>
+      
+      <text x="200" y="70" text-anchor="middle" fill="#173B65" font-size="20" font-weight="bold">Web Application</text>
+      <text x="200" y="95" text-anchor="middle" fill="#087E8B" font-size="14" font-weight="bold">[เว็บแอปในเบราว์เซอร์ · React]</text>
+      <text x="200" y="125" text-anchor="middle" fill="#172333" font-size="14">แสดงหน้าจอ ค้นหา · แจ้งหาย · เมนูตาม Role</text>
+      <text x="200" y="148" text-anchor="middle" fill="#718096" font-size="13">Responsive UI บน PC และ Mobile (NFR-CLF-02)</text>
+    </g>
+
+    <!-- Do / Don't in Client -->
+    <g transform="translate(30, 290)" font-size="15">
+      <text x="10" y="30" fill="#2E7D5B" font-size="20" font-weight="bold">✓</text>
+      <text x="35" y="30" fill="#172333">แสดงหน้าจอและตรวจความถูกต้องเบื้องต้น (Client-side validation)</text>
+      
+      <text x="10" y="80" fill="#B3261E" font-size="20" font-weight="bold">✗</text>
+      <text x="35" y="80" fill="#B3261E" font-weight="bold">ห้ามเก็บความลับ หรือไฟล์หลักฐานส่วนบุคคลถาวร</text>
+
+      <text x="10" y="130" fill="#B3261E" font-size="20" font-weight="bold">✗</text>
+      <text x="35" y="130" fill="#B3261E" font-weight="bold">ห้ามเป็นที่ตัดสินสิทธิ์ (RBAC) หรือเปลี่ยนสถานะโดยตรง</text>
+
+      <text x="10" y="180" fill="#B3261E" font-size="20" font-weight="bold">✗</text>
+      <text x="35" y="180" fill="#B3261E" font-weight="bold">ห้ามแสดงภาพต้นฉบับที่ยังไม่ผ่านการเบลอร์ (D1)</text>
+    </g>
+  </g>
+
+  <!-- Middle: Trust Boundary Line -->
+  <line x1="550" y1="95" x2="550" y2="775" stroke="#B3261E" stroke-width="3" stroke-dasharray="6 4"/>
+  <rect x="500" y="730" width="100" height="50" rx="8" fill="#FFF5F5" stroke="#FEB2B2" stroke-width="1.5"/>
+  <text x="550" y="752" text-anchor="middle" fill="#B3261E" font-size="13" font-weight="bold">เส้นแบ่ง</text>
+  <text x="550" y="770" text-anchor="middle" fill="#B3261E" font-size="13" font-weight="bold">ความไว้ใจ</text>
+
+  <!-- Arrow Web to Server -->
+  <line x1="430" y1="270" x2="640" y2="270" stroke="#173B65" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="470" y="240" width="160" height="25" rx="4" fill="#FFFFFF" stroke="#173B65" stroke-width="1.5"/>
+  <text x="550" y="257" text-anchor="middle" fill="#173B65" font-size="11" font-weight="bold">REST/JSON · HTTPS</text>
+
+  <!-- Right Side: Team Server -->
+  <g transform="translate(610, 95)">
+    <rect x="0" y="0" width="460" height="680" rx="10" fill="#F1F7FA" stroke="#008699" stroke-width="2.5"/>
+    <text x="30" y="40" fill="#172333" font-size="22" font-weight="bold">server ของทีม (Protected Environment)</text>
+    <text x="30" y="65" fill="#718096" font-size="15">ทีมควบคุม — ผู้ใช้ภายนอกเข้าถึงได้ผ่าน API ที่มีสิทธิ์เท่านั้น</text>
+
+    <!-- API Box -->
+    <g transform="translate(30, 90)" filter="url(#shadow)">
+      <rect x="0" y="0" width="400" height="130" rx="8" fill="#FFFFFF" stroke="#008699" stroke-width="2.5"/>
+      <text x="200" y="35" text-anchor="middle" fill="#173B65" font-size="20" font-weight="bold">API Application</text>
+      <text x="200" y="60" text-anchor="middle" fill="#087E8B" font-size="14" font-weight="bold">[server · Node.js + Express]</text>
+      <text x="200" y="88" text-anchor="middle" fill="#172333" font-size="13">ควบคุมกติกา BR-CLF-01 · สิทธิ์ RBAC · State Guard</text>
+      <text x="200" y="110" text-anchor="middle" fill="#172333" font-size="13">เบลอร์ภาพส่วนบุคคล · ตรวจไฟล์แนบ ≤10MB</text>
+    </g>
+
+    <!-- DB Box -->
+    <g transform="translate(30, 240)" filter="url(#shadow)">
+      <rect x="0" y="0" width="190" height="110" rx="8" fill="#FFFFFF" stroke="#008699" stroke-width="2"/>
+      <text x="95" y="35" text-anchor="middle" fill="#173B65" font-size="16" font-weight="bold">Database</text>
+      <text x="95" y="58" text-anchor="middle" fill="#087E8B" font-size="12" font-weight="bold">[PostgreSQL]</text>
+      <text x="95" y="85" text-anchor="middle" fill="#172333" font-size="12">เก็บ State, Audit Log</text>
+      <text x="95" y="102" text-anchor="middle" fill="#718096" font-size="11">ACID Transactions</text>
+    </g>
+
+    <!-- File Storage Box -->
+    <g transform="translate(240, 240)" filter="url(#shadow)">
+      <rect x="0" y="0" width="190" height="110" rx="8" fill="#FFFFFF" stroke="#008699" stroke-width="2"/>
+      <text x="95" y="35" text-anchor="middle" fill="#173B65" font-size="16" font-weight="bold">File Storage</text>
+      <text x="95" y="58" text-anchor="middle" fill="#087E8B" font-size="12" font-weight="bold">[Secure Object Storage]</text>
+      <text x="95" y="85" text-anchor="middle" fill="#172333" font-size="12">เก็บภาพเบลอร์แล้ว</text>
+      <text x="95" y="102" text-anchor="middle" fill="#718096" font-size="11">ไฟล์หลักฐาน private</text>
+    </g>
+
+    <!-- Do in Server -->
+    <g transform="translate(30, 380)" font-size="15">
+      <text x="10" y="30" fill="#2E7D5B" font-size="20" font-weight="bold">✓</text>
+      <text x="35" y="30" fill="#172333">กติกาการเบลอร์ภาพ (BR-CLF-01) และตรวจสิทธิ์ (NFR-CLF-01)</text>
+
+      <text x="10" y="75" fill="#2E7D5B" font-size="20" font-weight="bold">✓</text>
+      <text x="35" y="75" fill="#172333">ตรึงคำร้องเป็น Pending เสมอ ป้องกันสวมรอย (D2)</text>
+
+      <text x="10" y="120" fill="#2E7D5B" font-size="20" font-weight="bold">✓</text>
+      <text x="35" y="120" fill="#172333">จัดเก็บข้อมูล DR-01 ถึง DR-04 และรองรับ ACID Transaction</text>
+
+      <text x="10" y="165" fill="#2E7D5B" font-size="20" font-weight="bold">✓</text>
+      <text x="35" y="165" fill="#172333">บันทึก Audit Log ทุกครั้งที่เปลี่ยนสถานะ (D3)</text>
+    </g>
+  </g>
+</svg>

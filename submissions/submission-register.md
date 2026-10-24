@@ -9,33 +9,32 @@
 
 | รายการ | กรอก |
 |---|---|
-| Case No. (ตาม Google Sheet ของรายวิชา) | Case .. |
-| ชื่อระบบ | |
-| Repo URL | |
+| Case No. (ตาม Google Sheet ของรายวิชา) | Case 05 |
+| ชื่อระบบ | ระบบแจ้งของหาย-พบของในมหาวิทยาลัย (Campus Lost and Found) |
+| Repo URL | https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found |
 
 | ชื่อ–สกุล | GitHub username และชื่อทุกชื่อที่ขึ้นใน commit | บทบาทหลัก |
 |---|---|---|
-| | (เช่น `film1023` · ถ้าเคย commit ผ่านหน้าเว็บ GitHub ให้ใส่ชื่อที่แสดงด้วย) | |
-| | | |
-| | | |
+| ธนรัก ชุ่มสวัสดิ์ | `ThanarakCSW`, `THANARAK` | Facilitator / Requirements Lead / Traceability Auditor |
+| นรบดี บุญเลิศ | `nara-bodee`, `Narabodee`, `Narabodee Boonlead` | Quality Checker / Scribe / Timekeeper / Designer |
 
 ## งานรายสัปดาห์
 
 | Week | งาน | ไฟล์หลัก (permalink) | ใบส่งงาน (ถ้ามี) | Commit ฉบับส่ง | วันที่ส่ง | สถานะ | หมายเหตุ |
 |---:|---|---|---|---|---|---|---|
-| 01 | Problem Brief v0.1 | | | | | | |
-| 02 | Stakeholder · Context · Scope | | | | | | |
-| 03 | Elicitation Plan · Interview Guide · Rehearsal | | | | | | |
-| 04 | Evidence Log · Requirement Candidates · บทสนทนา AI | | | | | | |
-| 05 | Requirement Backlog · Prioritization | | | | | | |
-| 05b | Requirement Baseline Review & Readiness Gate | | | | | | |
-| 06 | User Story · Use Case · Acceptance Criteria | | | | | | |
-| 07 | SRS v1 | | | | | | |
-| 08 | Validation · Traceability · Change log | | | | | | |
-| 09 | สอบกลางภาค (งานกลุ่ม) | branch กลางภาค + ลิงก์ Pull Request | — | | | | |
-| 10 | Design Strategy + Design Spine | | | | | | |
-| 11 | Conceptual Architecture (Word + ภาพ .drawio/.png) | | | | | | |
-| 15 | สอบปลายภาค ส่วน ก | branch `final-exam` + ลิงก์ Pull Request | `final-exam/final-exam-submission.md` | | | | |
+| 01 | Problem Brief v0.1 | [01-problem-brief-v0.1.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/b4adbfd96b8b6c3e1569bf6000cf3d04211e827f/docs/01-problem-brief-v0.1.md) | [week-01-submission.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/submissions/week-01-submission.md) | `b4adbfd` | 2026-07-05 | ส่งแล้ว | รอเติม reading notes เพิ่มเติมใน evidence |
+| 02 | Stakeholder · Context · Scope | [02-stakeholder-context-scope.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/f561fc12269be1266ae8e1b5a0120b2a81eb9c36/docs/02-stakeholder-context-scope.md) | [week-02-submission.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/submissions/week-02-submission.md) | `f561fc1` | 2026-07-14 | ส่งแล้ว | |
+| 03 | Elicitation Plan · Interview Guide · Rehearsal | [03-interview-guide.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/82deb7a3fbf8315543ec3320f764273d06bac3b6/docs/03-interview-guide.md) | [week-03-submission.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/submissions/week-03-submission.md) | `82deb7a` | 2026-08-03 | ส่งแล้ว | |
+| 04 | Evidence Log · Requirement Candidates · บทสนทนา AI | [04-evidence-log.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/6cf8479d740c97fd9bceffc5664f70d999e315dd/docs/04-evidence-log.md) | [week-04-submission.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/submissions/week-04-submission.md) | `6cf8479` | 2026-08-04 | ส่งแล้ว | |
+| 05 | Requirement Backlog · Prioritization | [05-requirement-backlog.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/2a4060d26a6c0bb06740398f7ec681e7157d65e2/docs/05-requirement-backlog.md) | [week-05-submission.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/submissions/week-05-submission.md) | `2a4060d` | 2026-08-18 | ส่งแล้ว | |
+| 05b | Requirement Baseline Review & Readiness Gate | [08-validation-traceability.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/f6c16dd182b688ccfd67e30acc3ad57fc238ae6f/docs/08-validation-traceability.md) | [baseline-review-submission.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/f6c16dd182b688ccfd67e30acc3ad57fc238ae6f/submissions/baseline-review-submission.md) | `f6c16dd` | 2026-08-19 | ส่งแล้ว | ลิงก์ชี้ tag `baseline-v1.0` ในใบส่งงาน |
+| 06 | User Story · Use Case · Acceptance Criteria | [06-requirement-models.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/0bc598d5dcc895c0ddfd27b7672251961de46438/docs/06-requirement-models.md) | [week-06-submission.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/submissions/week-06-submission.md) | `0bc598d` | 2026-09-17 | ส่งแล้ว | แนบ Activity Diagram ใน diagrams/activity/ เรียบร้อย |
+| 07 | SRS v1 | [07-srs-v1.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/dc87cd1d056201c14fb7d3585f8ef70392ded0e8/docs/07-srs-v1.md) | [week-07-submission.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/submissions/week-07-submission.md) | `dc87cd1` | 2026-09-22 | ส่งแล้ว | |
+| 08 | Validation · Traceability · Change log | [08-validation-traceability.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/docs/08-validation-traceability.md) | [week-08-submission.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/submissions/week-08-submission.md) | tag `midterm-snapshot` | 2026-09-21 | ส่งแล้ว | ส่วน B ของ docs/08 · tag `midterm-snapshot` |
+| 09 | สอบกลางภาค (งานกลุ่ม) | branch กลางภาค + ลิงก์ Pull Request | — | — | — | ยังไม่ได้ส่ง | |
+| 10 | Design Strategy + Design Spine | [10-design-strategy.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/design/10-design-strategy.md) | [week-10-submission.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/submissions/week-10-submission.md) | `794ebf0` | 2026-09-22 | ส่งแล้ว | |
+| 11 | Conceptual Architecture (Word + ภาพ .drawio/.png) | [11-conceptual-architecture-v0.1.docx](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/design/11-conceptual-architecture-v0.1.docx) | [week-11-submission.md](https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found/blob/main/submissions/week-11-submission.md) | `ba193bc` | 2026-10-05 | ส่งแล้ว | |
+| 15 | สอบปลายภาค ส่วน ก | branch `final-exam` + ลิงก์ Pull Request | `final-exam/final-exam-submission.md` | — | — | ยังไม่ได้ส่ง | |
 
 **สถานะที่ใช้:** `ส่งแล้ว` · `ส่งบางส่วน` (เขียนในหมายเหตุว่าขาดอะไร) · `ส่งทางอื่น` (ใส่ลิงก์ในหมายเหตุ เช่น Teams) · `ไม่ได้ส่ง` · `แก้หลังกำหนด` (ใส่ทั้ง commit ฉบับที่ส่งตรงเวลาและ commit ฉบับแก้)
 
@@ -49,9 +48,9 @@
 
 ## ตรวจก่อนส่งหน้านี้
 
-- [ ] ไม่มีเครื่องหมาย merge conflict ค้างในไฟล์ใด (`<<<<<<<` · `=======` · `>>>>>>>`)
-- [ ] งานที่ใช้ AI ช่วยบันทึกใน `project-management/ai-use-log.md` ครบ — ไฟล์ที่มีร่องรอยอย่าง `[cite: 1]` แปลว่ามีข้อความจาก AI ต้องมีรายการใน log
-- [ ] ไม่มีข้อความที่คัดลอกจากตัวอย่าง CRBS หรือจาก template ค้างอยู่ (เช่น "Example commit message" · ชื่อระบบหรือกติกาของ CRBS)
-- [ ] peer feedback ระบุกลุ่มผู้ตรวจจริง (Case No.) ไม่ใช่ชื่อสมมติ
-- [ ] worklog และตารางคะแนนเพื่อน (peer) ให้แต่ละคนกรอกส่วนของตัวเองด้วยบัญชีของตัวเอง
-- [ ] ไม่มีรหัสนักศึกษาในชื่อไฟล์
+- [x] ไม่มีเครื่องหมาย merge conflict ค้างในไฟล์ใด (`<<<<<<<` · `=======` · `>>>>>>>`)
+- [x] งานที่ใช้ AI ช่วยบันทึกใน `project-management/ai-use-log.md` ครบ — ไฟล์ที่มีร่องรอยอย่าง `[cite: 1]` แปลว่ามีข้อความจาก AI ต้องมีรายการใน log
+- [x] ไม่มีข้อความที่คัดลอกจากตัวอย่าง CRBS หรือจาก template ค้างอยู่ (เช่น "Example commit message" · ชื่อระบบหรือกติกาของ CRBS)
+- [x] peer feedback ระบุกลุ่มผู้ตรวจจริง (Case No.) ไม่ใช่ชื่อสมมติ
+- [x] worklog และตารางคะแนนเพื่อน (peer) ให้แต่ละคนกรอกส่วนของตัวเองด้วยบัญชีของตัวเอง
+- [x] ไม่มีรหัสนักศึกษาในชื่อไฟล์

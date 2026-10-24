@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720 820" width="1720" height="820" style="background-color:#ffffff; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#173B65" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#3182CE" />
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#718096" />
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Central System Box -->
+  <g filter="url(#shadow)">
+    <rect x="640" y="30" width="440" height="740" rx="12" fill="#F1F7FA" stroke="#173B65" stroke-width="3"/>
+    <path d="M 640 42 Q 640 30 652 30 L 1068 30 Q 1080 30 1080 42 L 1080 120 L 640 120 Z" fill="#173B65"/>
+  </g>
+  <text x="860" y="72" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="bold">Campus Lost and Found</text>
+  <text x="860" y="102" text-anchor="middle" fill="#DCE8F2" font-size="16">ระบบแจ้งของหาย-พบของในมหาวิทยาลัย (Case 05)</text>
+
+  <!-- System Scope -->
+  <text x="665" y="155" fill="#173B65" font-size="20" font-weight="bold">ระบบรับผิดชอบ (In Scope)</text>
+  
+  <g font-size="15" fill="#172333">
+    <circle cx="675" cy="190" r="4" fill="#008699"/>
+    <text x="690" y="195">รับแจ้งของหาย และค้นหารายการสิ่งของที่พบ</text>
+    
+    <circle cx="675" cy="225" r="4" fill="#008699"/>
+    <text x="690" y="230">รับแจ้งเบาะแสและพิกัดพบของแบบไม่ระบุตัวตน</text>
+    
+    <circle cx="675" cy="260" r="4" fill="#008699"/>
+    <text x="690" y="265">บันทึกรับเข้าคลัง และเบลอร์ภาพส่วนบุคคล (PDPA)</text>
+    
+    <circle cx="675" cy="295" r="4" fill="#008699"/>
+    <text x="690" y="300">รับไฟล์หลักฐานยืนยันตน (≤ 10MB) แบบส่วนตัว</text>
+    
+    <circle cx="675" cy="330" r="4" fill="#008699"/>
+    <text x="690" y="335">ตรวจสอบหลักฐาน และเปลี่ยนสถานะคำร้อง</text>
+    
+    <circle cx="675" cy="365" r="4" fill="#008699"/>
+    <text x="690" y="370">บันทึกการส่งมอบสิ่งของคืน (Returned)</text>
+    
+    <circle cx="675" cy="400" r="4" fill="#008699"/>
+    <text x="690" y="405">ควบคุมสิทธิ์ RBAC และบันทึก Audit Log ทุกขั้นตอน</text>
+    
+    <circle cx="675" cy="435" r="4" fill="#008699"/>
+    <text x="690" y="440">สรุปรายงานสิ่งของตกค้างเกินกำหนด (Unclaimed)</text>
+  </g>
+
+  <!-- Out of scope box -->
+  <rect x="660" y="500" width="400" height="245" rx="8" fill="#FFFFFF" stroke="#CBD5E0" stroke-width="1.5"/>
+  <text x="675" y="530" fill="#4A5568" font-size="18" font-weight="bold">ไม่อยู่ในความรับผิดชอบ (Out of Scope)</text>
+  <g font-size="14" fill="#718096">
+    <text x="675" y="565">• การติดตามพัสดุหรือจัดส่งสิ่งของทางไปรษณีย์</text>
+    <text x="675" y="595">• กล้องวงจรปิด (CCTV) และระบบรักษาความปลอดภัยกายภาพ</text>
+    <text x="675" y="625">• การตรวจสอบสิทธิ์ทางกฎหมายเต็มรูปแบบ / คดีความ</text>
+    <text x="675" y="655">• การขายทอดตลาด / ประมูล / ทำลายทรัพย์สินจริง</text>
+    <text x="675" y="685">• การส่งข้อความแจ้งเตือนภายนอกที่ยังไม่ยืนยัน integration</text>
+    <text x="675" y="715">• การจัดสรรอัตรากำลังเจ้าหน้าที่กายภาพประจำตึก</text>
+  </g>
+
+  <!-- ACT-01: Requester -->
+  <g transform="translate(50, 60)">
+    <rect x="0" y="0" width="280" height="95" rx="8" fill="#FFFFFF" stroke="#CBD5E0" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="40" cy="35" r="15" fill="#173B65"/>
+    <path d="M 20 70 A 20 18 0 0 1 60 70 Z" fill="#173B65"/>
+    <text x="75" y="35" fill="#087E8B" font-size="14" font-weight="bold">ACT-01 [Person]</text>
+    <text x="75" y="55" fill="#172333" font-size="16" font-weight="bold">ผู้ทำของหาย (Requester)</text>
+    <text x="75" y="75" fill="#718096" font-size="13">นักศึกษา / บุคลากร ผู้ทำของหาย</text>
+  </g>
+  <line x1="340" y1="107" x2="630" y2="107" stroke="#173B65" stroke-width="2.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="485" y="95" text-anchor="middle" fill="#172333" font-size="12" font-weight="500">ส่ง: แจ้งของหาย · ค้นหา · ยื่นหลักฐาน (≤10MB)</text>
+  <text x="485" y="125" text-anchor="middle" fill="#718096" font-size="12">รับ: รายการของที่พบ (censored) · สถานะคำร้อง</text>
+
+  <!-- ACT-02: Finder -->
+  <g transform="translate(50, 230)">
+    <rect x="0" y="0" width="280" height="95" rx="8" fill="#FFFFFF" stroke="#CBD5E0" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="40" cy="35" r="15" fill="#173B65"/>
+    <path d="M 20 70 A 20 18 0 0 1 60 70 Z" fill="#173B65"/>
+    <text x="75" y="35" fill="#087E8B" font-size="14" font-weight="bold">ACT-02 [Person]</text>
+    <text x="75" y="55" fill="#172333" font-size="16" font-weight="bold">ผู้พบของ (Finder)</text>
+    <text x="75" y="75" fill="#718096" font-size="13">บุคคลทั่วไป (ไม่จำเป็นต้องระบุตัวตน)</text>
+  </g>
+  <line x1="340" y1="277" x2="630" y2="277" stroke="#173B65" stroke-width="2.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="485" y="265" text-anchor="middle" fill="#172333" font-size="12" font-weight="500">ส่ง: แจ้งเบาะแสและพิกัดที่พบ (Anonymous)</text>
+  <text x="485" y="295" text-anchor="middle" fill="#718096" font-size="12">รับ: รหัสติดตามเบาะแส / ผลบันทึกรับเรื่อง</text>
+
+  <!-- ACT-03: Staff -->
+  <g transform="translate(50, 400)">
+    <rect x="0" y="0" width="280" height="95" rx="8" fill="#FFFFFF" stroke="#CBD5E0" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="40" cy="35" r="15" fill="#173B65"/>
+    <path d="M 20 70 A 20 18 0 0 1 60 70 Z" fill="#173B65"/>
+    <text x="75" y="35" fill="#087E8B" font-size="14" font-weight="bold">ACT-03 [Person]</text>
+    <text x="75" y="55" fill="#172333" font-size="16" font-weight="bold">เจ้าหน้าที่ (Staff)</text>
+    <text x="75" y="75" fill="#718096" font-size="13">เจ้าหน้าที่ศูนย์รับของหายส่วนกลาง</text>
+  </g>
+  <line x1="340" y1="447" x2="630" y2="447" stroke="#173B65" stroke-width="2.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="485" y="435" text-anchor="middle" fill="#172333" font-size="12" font-weight="500">ส่ง: บันทึกรับของ · เบลอร์ภาพ · ตรวจหลักฐาน · คืนของ</text>
+  <text x="485" y="465" text-anchor="middle" fill="#718096" font-size="12">รับ: คิวคำร้องรอตรวจ · รายการของในคลัง · รายงาน</text>
+
+  <!-- ACT-04: Admin -->
+  <g transform="translate(50, 570)">
+    <rect x="0" y="0" width="280" height="95" rx="8" fill="#FFFFFF" stroke="#CBD5E0" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="40" cy="35" r="15" fill="#173B65"/>
+    <path d="M 20 70 A 20 18 0 0 1 60 70 Z" fill="#173B65"/>
+    <text x="75" y="35" fill="#087E8B" font-size="14" font-weight="bold">ACT-04 [Person]</text>
+    <text x="75" y="55" fill="#172333" font-size="16" font-weight="bold">ผู้ดูแลระบบ (IT Admin)</text>
+    <text x="75" y="75" fill="#718096" font-size="13">ผู้ดูแลระบบ IT ประจำมหาวิทยาลัย</text>
+  </g>
+  <line x1="340" y1="617" x2="630" y2="617" stroke="#173B65" stroke-width="2.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="485" y="605" text-anchor="middle" fill="#172333" font-size="12" font-weight="500">ส่ง: กำหนดบทบาทสิทธิ์ (RBAC) · ตรวจสอบความปลอดภัย</text>
+  <text x="485" y="635" text-anchor="middle" fill="#718096" font-size="12">รับ: บันทึก Audit Log · รายงานภาพรวมระบบ</text>
+
+  <!-- EXT-01: Identity Service -->
+  <g transform="translate(1380, 70)">
+    <rect x="0" y="0" width="300" height="120" rx="8" fill="#EBF4FF" stroke="#3182CE" stroke-width="2" filter="url(#shadow)"/>
+    <text x="150" y="30" text-anchor="middle" fill="#2B6CB0" font-size="16" font-weight="bold">EXT-01: Institutional Identity Service</text>
+    <rect x="60" y="42" width="180" height="20" rx="4" fill="#FED7D7"/>
+    <text x="150" y="56" text-anchor="middle" fill="#9B2C2C" font-size="11" font-weight="bold">Core Boundary · TBD / DD-01</text>
+    <text x="150" y="82" text-anchor="middle" fill="#4A5568" font-size="13">ระบบยืนยันตัวตนมหาวิทยาลัย (SSO)</text>
+    <text x="150" y="102" text-anchor="middle" fill="#718096" font-size="12">ส่งมอบ User Identity และ Role Claim</text>
+  </g>
+  <line x1="1090" y1="130" x2="1370" y2="130" stroke="#3182CE" stroke-width="2.5" stroke-dasharray="6 4" marker-start="url(#arrow-blue)" marker-end="url(#arrow-blue)"/>
+  <text x="1230" y="118" text-anchor="middle" fill="#172333" font-size="12" font-weight="500">ส่ง: คำขอยืนยันตัวตน (Login Request)</text>
+  <text x="1230" y="148" text-anchor="middle" fill="#526579" font-size="12">รับ: User Ref · Role Claims (Student/Staff)</text>
+
+  <!-- EXT-02: Notification Service -->
+  <g transform="translate(1380, 310)">
+    <rect x="0" y="0" width="300" height="120" rx="8" fill="#F7FAFC" stroke="#718096" stroke-width="2" filter="url(#shadow)"/>
+    <text x="150" y="30" text-anchor="middle" fill="#4A5568" font-size="16" font-weight="bold">EXT-02: External Notification Service</text>
+    <rect x="60" y="42" width="180" height="20" rx="4" fill="#FEFCBF"/>
+    <text x="150" y="56" text-anchor="middle" fill="#975A16" font-size="11" font-weight="bold">Extension · In-app First / DD-03</text>
+    <text x="150" y="82" text-anchor="middle" fill="#4A5568" font-size="13">บริการแจ้งเตือนภายนอก (Email / LINE)</text>
+    <text x="150" y="102" text-anchor="middle" fill="#718096" font-size="12">ส่งข้อความเมื่อสถานะคำร้องเปลี่ยน</text>
+  </g>
+  <line x1="1090" y1="370" x2="1370" y2="370" stroke="#718096" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#arrow-gray)"/>
+  <text x="1230" y="358" text-anchor="middle" fill="#526579" font-size="12">ส่ง: ข้อความแจ้งเตือนสถานะคำร้อง [FR-CLF-07]</text>
+
+  <!-- EXT-03: Object Storage -->
+  <g transform="translate(1380, 550)">
+    <rect x="0" y="0" width="300" height="120" rx="8" fill="#EBF4FF" stroke="#3182CE" stroke-width="2" filter="url(#shadow)"/>
+    <text x="150" y="30" text-anchor="middle" fill="#2B6CB0" font-size="16" font-weight="bold">EXT-03: Object Storage Service</text>
+    <rect x="60" y="42" width="180" height="20" rx="4" fill="#C6F6D5"/>
+    <text x="150" y="56" text-anchor="middle" fill="#22543D" font-size="11" font-weight="bold">Core Boundary · Secure Storage</text>
+    <text x="150" y="82" text-anchor="middle" fill="#4A5568" font-size="13">จัดเก็บภาพถ่ายเบลอร์แล้ว (Public)</text>
+    <text x="150" y="102" text-anchor="middle" fill="#718096" font-size="12">และไฟล์หลักฐานยืนยันตน (Private ≤10MB)</text>
+  </g>
+  <line x1="1090" y1="610" x2="1370" y2="610" stroke="#3182CE" stroke-width="2.5" marker-start="url(#arrow-blue)" marker-end="url(#arrow-blue)"/>
+  <text x="1230" y="598" text-anchor="middle" fill="#172333" font-size="12" font-weight="500">ส่ง: อัปโหลดภาพ (censored) / หลักฐาน (private)</text>
+  <text x="1230" y="628" text-anchor="middle" fill="#526579" font-size="12">รับ: Secure File Stream / Storage URL [DR-02]</text>
+
+</svg>

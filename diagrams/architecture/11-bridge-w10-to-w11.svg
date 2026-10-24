@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 880" width="1100" height="880" style="background-color:#ffffff; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <marker id="arrow-d" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 1 0 L 5 10 L 9 0 z" fill="#D89715" />
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="30" y="35" fill="#173B65" font-size="24" font-weight="bold">การเชื่อมโยง: รับอะไรจาก W10 ผลิตอะไรใน W11 และส่งต่ออะไรให้ W12–W13</text>
+  <text x="30" y="60" fill="#718096" font-size="14">Campus Lost and Found (Case 05) — สถาปัตยกรรมระดับ Conceptual Architecture</text>
+
+  <!-- Block 1: รับจาก W10 -->
+  <g transform="translate(30, 80)" filter="url(#shadow)">
+    <rect x="0" y="0" width="1040" height="200" rx="8" fill="#FFFFFF" stroke="#D89715" stroke-width="2.5"/>
+    <path d="M 0 8 Q 0 0 8 0 L 220 0 L 220 200 L 8 200 Q 0 200 0 192 Z" fill="#008699"/>
+    <text x="110" y="90" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="bold">รับจาก W10</text>
+    <text x="110" y="120" text-anchor="middle" fill="#DCE8F2" font-size="14">Design Strategy</text>
+
+    <!-- Content Columns -->
+    <g transform="translate(250, 25)" font-size="15" fill="#172333">
+      <circle cx="10" cy="20" r="4" fill="#008699"/>
+      <text x="25" y="25">Spine: วงจรสิ่งของ 7 แถว (1–6 Build now · 7 Overview)</text>
+      
+      <circle cx="10" cy="65" r="4" fill="#008699"/>
+      <text x="25" y="70">ข้อตกลง 3 ข้อ: กติกาที่ API · State บันทึกได้ · สิทธิ์หลักฐาน</text>
+      
+      <circle cx="10" cy="110" r="4" fill="#008699"/>
+      <text x="25" y="115">Open Decisions: DD-01 ถึง DD-05 (PDPA, Retention, etc.)</text>
+    </g>
+
+    <g transform="translate(640, 25)" font-size="15" fill="#172333">
+      <circle cx="10" cy="20" r="4" fill="#008699"/>
+      <text x="25" y="25"><tspan font-weight="bold">D1:</tspan> Privacy Leak = พัง (BR-CLF-01, NFR-CLF-01)</text>
+      
+      <circle cx="10" cy="65" r="4" fill="#008699"/>
+      <text x="25" y="70"><tspan font-weight="bold">D2:</tspan> Pending Gate = ป้องกันสวมรอย (FR-CLF-05)</text>
+      
+      <circle cx="10" cy="110" r="4" fill="#008699"/>
+      <text x="25" y="115"><tspan font-weight="bold">D3:</tspan> Audit Log ทุกการเปลี่ยนสถานะ (NFR-CLF-01)</text>
+    </g>
+  </g>
+
+  <!-- Down Arrow 1 -->
+  <line x1="550" y1="285" x2="550" y2="340" stroke="#D89715" stroke-width="4" marker-end="url(#arrow-d)"/>
+
+  <!-- Block 2: W11 ผลิต -->
+  <g transform="translate(30, 345)" filter="url(#shadow)">
+    <rect x="0" y="0" width="1040" height="200" rx="8" fill="#FFFFFF" stroke="#173B65" stroke-width="2.5"/>
+    <path d="M 0 8 Q 0 0 8 0 L 220 0 L 220 200 L 8 200 Q 0 200 0 192 Z" fill="#173B65"/>
+    <text x="110" y="90" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="bold">W11 ผลิต</text>
+    <text x="110" y="120" text-anchor="middle" fill="#DCE8F2" font-size="14">Conceptual Architecture</text>
+
+    <!-- Content Columns -->
+    <g transform="translate(250, 25)" font-size="15" fill="#172333">
+      <circle cx="10" cy="20" r="4" fill="#173B65"/>
+      <text x="25" y="25">Context Diagram (C4 ระดับ 1: ระบบ 1 กล่อง + Actors + Externals)</text>
+      
+      <circle cx="10" cy="65" r="4" fill="#173B65"/>
+      <text x="25" y="70">Container Diagram (C4 ระดับ 2: Web, API, Database, File Storage)</text>
+      
+      <circle cx="10" cy="110" r="4" fill="#173B65"/>
+      <text x="25" y="115">ชนิดและสภาพแวดล้อม (รันที่ไหน ใครควบคุม เส้นแบ่งความไว้ใจ)</text>
+    </g>
+
+    <g transform="translate(640, 25)" font-size="15" fill="#172333">
+      <circle cx="10" cy="20" r="4" fill="#173B65"/>
+      <text x="25" y="25">NFR Impact Map → ชี้ตรงลง Container</text>
+      
+      <circle cx="10" cy="65" r="4" fill="#173B65"/>
+      <text x="25" y="70">Decision Cards: DEC-01 ถึง DEC-04 (Stack, Server rules)</text>
+      
+      <circle cx="10" cy="110" r="4" fill="#173B65"/>
+      <text x="25" y="115">Spine เดินบน Container: เติมคอลัมน์ W11 ครบ 7 แถว</text>
+    </g>
+  </g>
+
+  <!-- Down Arrow 2 -->
+  <line x1="550" y1="550" x2="550" y2="605" stroke="#D89715" stroke-width="4" marker-end="url(#arrow-d)"/>
+
+  <!-- Block 3: ส่งต่อ W12–W13 -->
+  <g transform="translate(30, 610)" filter="url(#shadow)">
+    <rect x="0" y="0" width="1040" height="200" rx="8" fill="#FFFFFF" stroke="#087E8B" stroke-width="2.5"/>
+    <path d="M 0 8 Q 0 0 8 0 L 220 0 L 220 200 L 8 200 Q 0 200 0 192 Z" fill="#087E8B"/>
+    <text x="110" y="90" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="bold">ส่งต่อ</text>
+    <text x="110" y="120" text-anchor="middle" fill="#DCE8F2" font-size="14">W12 และ W13</text>
+
+    <!-- Content Columns -->
+    <g transform="translate(250, 30)" font-size="15" fill="#172333">
+      <circle cx="10" cy="25" r="4" fill="#087E8B"/>
+      <text x="25" y="30"><tspan font-weight="bold">W12 (UX/UI):</tspan> หน้าจอทั้งหมดอยู่ใน Web Application</text>
+      <text x="25" y="55" fill="#526579" font-size="13">ออกแบบ Responsive Web (NFR-CLF-02) แสดงสถานะคำร้อง Pending/Verified</text>
+      
+      <circle cx="10" cy="95" r="4" fill="#087E8B"/>
+      <text x="25" y="100"><tspan font-weight="bold">W13 (Detailed Design):</tspan> ซูมเข้า API Application</text>
+      <text x="25" y="125" fill="#526579" font-size="13">C4 ระดับ 3 (Component Diagram) + Sequence lifelines + DB Schema</text>
+    </g>
+
+    <g transform="translate(640, 30)" font-size="15" fill="#172333">
+      <circle cx="10" cy="25" r="4" fill="#087E8B"/>
+      <text x="25" y="30"><tspan font-weight="bold">Developer Handoff:</tspan> แหล่งอ้างอิงของทีมพัฒนา</text>
+      <text x="25" y="55" fill="#526579" font-size="13">Container Diagram + Decision Cards = สัญญาพื้นฐานของระบบ</text>
+    </g>
+  </g>
+</svg>

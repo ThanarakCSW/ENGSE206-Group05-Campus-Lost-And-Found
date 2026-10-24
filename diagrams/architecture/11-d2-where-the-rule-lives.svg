@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 800" width="1100" height="800" style="background-color:#ffffff; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#173B65" />
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <text x="30" y="40" fill="#173B65" font-size="26" font-weight="bold">ทำไมที่อยู่ของกติกาจึงสำคัญ — Drivers D1 &amp; D2 ของ Campus Lost and Found</text>
+  <text x="30" y="65" fill="#718096" font-size="15">เปรียบเทียบ: วางกติกาไว้ที่หน้าเว็บ (Client) VS วางไว้ที่ API Application &amp; Database (Server)</text>
+
+  <!-- Left: If rule is on Web (Wrong) -->
+  <g transform="translate(30, 95)">
+    <rect x="0" y="0" width="500" height="660" rx="10" fill="#FFF5F5" stroke="#FEB2B2" stroke-width="2.5"/>
+    <text x="25" y="35" fill="#C53030" font-size="20" font-weight="bold">ถ้าตรวจกติกาที่หน้าเว็บอย่างเดียว (Client-only)</text>
+    <text x="25" y="60" fill="#E53E3E" font-size="14">เสี่ยงข้อมูลส่วนบุคคลหลุด และการสวมรอยรับของ (พัง!)</text>
+
+    <g transform="translate(25, 80)" filter="url(#shadow)">
+      <rect x="0" y="0" width="450" height="140" rx="8" fill="#FFFFFF" stroke="#FEB2B2" stroke-width="1.5"/>
+      <text x="20" y="30" fill="#C53030" font-size="16" font-weight="bold">ปัญหา 1: ผู้ใช้ bypass หรือส่ง API request ตรง</text>
+      <text x="20" y="58" fill="#4A5568" font-size="14">• ผู้ใช้สามารถยิง HTTP request สั่งเปลี่ยนสถานะเป็น Verified เอง</text>
+      <text x="20" y="82" fill="#4A5568" font-size="14">• ข้ามขั้นตอน Pending Gate (D2 พัง)</text>
+      <text x="20" y="106" fill="#4A5568" font-size="14">• มิจฉาชีพสวมรอยรับของได้โดยที่เจ้าหน้าที่ไม่เคยตรวจหลักฐาน</text>
+    </g>
+
+    <g transform="translate(25, 240)" filter="url(#shadow)">
+      <rect x="0" y="0" width="450" height="140" rx="8" fill="#FFFFFF" stroke="#FEB2B2" stroke-width="1.5"/>
+      <text x="20" y="30" fill="#C53030" font-size="16" font-weight="bold">ปัญหา 2: เบลอร์ภาพที่หน้าเว็บแต่ส่งภาพสดเข้า Storage</text>
+      <text x="20" y="58" fill="#4A5568" font-size="14">• ถ้าเบลอร์ภาพบน browser แล้วผู้ใช้เปิด Inspect / Network Tab</text>
+      <text x="20" y="82" fill="#4A5568" font-size="14">• จะเห็นภาพต้นฉบับที่มีเลขบัตรประชาชน / ใบหน้าบุคคล (D1 พัง)</text>
+      <text x="20" y="106" fill="#4A5568" font-size="14">• ละเมิดกฎหมาย PDPA และสิทธิส่วนบุคคลทันที</text>
+    </g>
+
+    <g transform="translate(25, 400)" filter="url(#shadow)">
+      <rect x="0" y="0" width="450" height="140" rx="8" fill="#FFFFFF" stroke="#FEB2B2" stroke-width="1.5"/>
+      <text x="20" y="30" fill="#C53030" font-size="16" font-weight="bold">ปัญหา 3: สองเจ้าหน้าที่เปิดตรวจเคสพร้อมกัน (Race)</text>
+      <text x="20" y="58" fill="#4A5568" font-size="14">• เจ้าหน้าที่ A กด Verify ขณะที่เจ้าหน้าที่ B กด Reject</text>
+      <text x="20" y="82" fill="#4A5568" font-size="14">• หากไม่มี Server Transaction สถานะจะขัดแย้งกัน</text>
+      <text x="20" y="106" fill="#4A5568" font-size="14">• ไม่มี Audit Log ที่แน่นอนว่าใครเป็นผู้ตัดสินเคสจริง (D3 พัง)</text>
+    </g>
+  </g>
+
+  <!-- Right: Rule on API & Database (Correct) -->
+  <g transform="translate(570, 95)">
+    <rect x="0" y="0" width="500" height="660" rx="10" fill="#F0FFF4" stroke="#9AE6B4" stroke-width="2.5"/>
+    <text x="25" y="35" fill="#22543D" font-size="20" font-weight="bold">วางกติกาที่ API Application &amp; Database (DEC-01 &amp; 02)</text>
+    <text x="25" y="60" fill="#276749" font-size="14">ปลอดภัย รัดกุม ตรวจสอบย้อนกลับได้สมบูรณ์ (สถาปัตยกรรมของทีม)</text>
+
+    <g transform="translate(25, 80)" filter="url(#shadow)">
+      <rect x="0" y="0" width="450" height="140" rx="8" fill="#FFFFFF" stroke="#9AE6B4" stroke-width="1.5"/>
+      <text x="20" y="30" fill="#22543D" font-size="16" font-weight="bold">ทางแก้ 1: State Machine ตรึง Pending ที่ API</text>
+      <text x="20" y="58" fill="#2D3748" font-size="14">• API เป็นที่เดียวที่รับคำร้อง และบังคับสถานะแรกเป็น Pending เสมอ</text>
+      <text x="20" y="82" fill="#2D3748" font-size="14">• ไม่อนุญาตให้ Client ระบุสถานะเอง (Transition Guard)</text>
+      <text x="20" y="106" fill="#2D3748" font-size="14">• สิทธิ์การเปลี่ยนสถานะต้องผ่าน Staff Token เท่านั้น (D2 รอด)</text>
+    </g>
+
+    <g transform="translate(25, 240)" filter="url(#shadow)">
+      <rect x="0" y="0" width="450" height="140" rx="8" fill="#FFFFFF" stroke="#9AE6B4" stroke-width="1.5"/>
+      <text x="20" y="30" fill="#22543D" font-size="16" font-weight="bold">ทางแก้ 2: Redaction &amp; Private Bucket ที่ Server</text>
+      <text x="20" y="58" fill="#2D3748" font-size="14">• API รับภาพเข้ามาแล้วตรวจสอบ/เบลอร์ส่วนบุคคลก่อนบันทึก</text>
+      <text x="20" y="82" fill="#2D3748" font-size="14">• เก็บไฟล์หลักฐานใน Private Bucket ที่ไม่มี Public URL</text>
+      <text x="20" y="106" fill="#2D3748" font-size="14">• ผู้ใช้ภายนอกไม่มีทางเห็นภาพต้นฉบับผ่าน Network ได้ (D1 รอด)</text>
+    </g>
+
+    <g transform="translate(25, 400)" filter="url(#shadow)">
+      <rect x="0" y="0" width="450" height="140" rx="8" fill="#FFFFFF" stroke="#9AE6B4" stroke-width="1.5"/>
+      <text x="20" y="30" fill="#22543D" font-size="16" font-weight="bold">ทางแก้ 3: Database Transaction + Audit Log</text>
+      <text x="20" y="58" fill="#2D3748" font-size="14">• การเปลี่ยนสถานะผูกกับการเขียน Audit Log ใน Transaction เดียว</text>
+      <text x="20" y="82" fill="#2D3748" font-size="14">• PostgreSQL จัดการ Concurrency Control ป้องกันการแก้ซ้อน</text>
+      <text x="20" y="106" fill="#2D3748" font-size="14">• ทราบตัวผู้ทำรายการ เวลา และเหตุผลประกอบเสมอ (D3 รอด)</text>
+    </g>
+  </g>
+</svg>

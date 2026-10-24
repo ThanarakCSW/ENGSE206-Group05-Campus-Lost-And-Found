@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram name="11-container" id="11-container">
+    <mxGraphModel dx="0" dy="0" grid="1" gridSize="10" page="1" pageWidth="1600" pageHeight="1120" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- System Boundary -->
+        <mxCell id="c1" value="" style="rounded=1;arcSize=2;absoluteArcSize=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#173B65;strokeWidth=2.5;dashed=1;" vertex="1" parent="1"><mxGeometry x="40.0" y="240.0" width="1050.0" height="820.0" as="geometry"/></mxCell>
+        <mxCell id="sys_label" value="Campus Lost and Found System [Software System]" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;fontColor=#173B65;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="60.0" y="1025.0" width="500.0" height="30.0" as="geometry"/></mxCell>
+
+        <!-- Actors on top -->
+        <!-- ACT-01 Requester -->
+        <mxCell id="act1" value="" style="shape=umlActor;verticalLabelPosition=bottom;html=1;fillColor=#173B65;strokeColor=#173B65;" vertex="1" parent="1"><mxGeometry x="130.0" y="20.0" width="36.0" height="58.0" as="geometry"/></mxCell>
+        <mxCell id="act1_id" value="ACT-01 [Person]" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;fontColor=#087E8B;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="40.0" y="85.0" width="216.0" height="22.0" as="geometry"/></mxCell>
+        <mxCell id="act1_name" value="ผู้ทำของหาย (Requester)" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#172333;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="40.0" y="108.0" width="216.0" height="25.0" as="geometry"/></mxCell>
+        <mxCell id="act1_sub" value="ค้นหาของหาย / ยื่นหลักฐาน" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=14;fontColor=#526579;" vertex="1" parent="1"><mxGeometry x="40.0" y="135.0" width="216.0" height="22.0" as="geometry"/></mxCell>
+        <mxCell id="edge_act1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=2.5;dashed=0;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="148" y="165" as="sourcePoint"/><mxPoint x="260" y="290" as="targetPoint"/></mxGeometry></mxCell>
+
+        <!-- ACT-02 Finder -->
+        <mxCell id="act2" value="" style="shape=umlActor;verticalLabelPosition=bottom;html=1;fillColor=#173B65;strokeColor=#173B65;" vertex="1" parent="1"><mxGeometry x="380.0" y="20.0" width="36.0" height="58.0" as="geometry"/></mxCell>
+        <mxCell id="act2_id" value="ACT-02 [Person]" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;fontColor=#087E8B;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="290.0" y="85.0" width="216.0" height="22.0" as="geometry"/></mxCell>
+        <mxCell id="act2_name" value="ผู้พบของ (Finder)" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#172333;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="290.0" y="108.0" width="216.0" height="25.0" as="geometry"/></mxCell>
+        <mxCell id="act2_sub" value="แจ้งเบาะแสไม่ระบุตัวตน" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=14;fontColor=#526579;" vertex="1" parent="1"><mxGeometry x="290.0" y="135.0" width="216.0" height="22.0" as="geometry"/></mxCell>
+        <mxCell id="edge_act2" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=2.5;dashed=0;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="398" y="165" as="sourcePoint"/><mxPoint x="420" y="290" as="targetPoint"/></mxGeometry></mxCell>
+
+        <!-- ACT-03 Staff -->
+        <mxCell id="act3" value="" style="shape=umlActor;verticalLabelPosition=bottom;html=1;fillColor=#173B65;strokeColor=#173B65;" vertex="1" parent="1"><mxGeometry x="630.0" y="20.0" width="36.0" height="58.0" as="geometry"/></mxCell>
+        <mxCell id="act3_id" value="ACT-03 [Person]" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;fontColor=#087E8B;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="540.0" y="85.0" width="216.0" height="22.0" as="geometry"/></mxCell>
+        <mxCell id="act3_name" value="เจ้าหน้าที่ (Staff)" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#172333;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="540.0" y="108.0" width="216.0" height="25.0" as="geometry"/></mxCell>
+        <mxCell id="act3_sub" value="ตรวจคำร้อง / เบลอร์ภาพ / คืนของ" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=14;fontColor=#526579;" vertex="1" parent="1"><mxGeometry x="540.0" y="135.0" width="216.0" height="22.0" as="geometry"/></mxCell>
+        <mxCell id="edge_act3" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=2.5;dashed=0;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="648" y="165" as="sourcePoint"/><mxPoint x="580" y="290" as="targetPoint"/></mxGeometry></mxCell>
+
+        <!-- ACT-04 Admin -->
+        <mxCell id="act4" value="" style="shape=umlActor;verticalLabelPosition=bottom;html=1;fillColor=#173B65;strokeColor=#173B65;" vertex="1" parent="1"><mxGeometry x="880.0" y="20.0" width="36.0" height="58.0" as="geometry"/></mxCell>
+        <mxCell id="act4_id" value="ACT-04 [Person]" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;fontColor=#087E8B;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="790.0" y="85.0" width="216.0" height="22.0" as="geometry"/></mxCell>
+        <mxCell id="act4_name" value="ผู้ดูแลระบบ (IT Admin)" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=18;fontColor=#172333;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="790.0" y="108.0" width="216.0" height="25.0" as="geometry"/></mxCell>
+        <mxCell id="act4_sub" value="จัดการสิทธิ์ RBAC / Audit Log" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=14;fontColor=#526579;" vertex="1" parent="1"><mxGeometry x="790.0" y="135.0" width="216.0" height="22.0" as="geometry"/></mxCell>
+        <mxCell id="edge_act4" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=2.5;dashed=0;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="898" y="165" as="sourcePoint"/><mxPoint x="740" y="290" as="targetPoint"/></mxGeometry></mxCell>
+
+        <!-- Container 1: Web Application -->
+        <mxCell id="cnt1" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F7FA;strokeColor=#008699;strokeWidth=3;" vertex="1" parent="1"><mxGeometry x="100.0" y="290.0" width="800.0" height="160.0" as="geometry"/></mxCell>
+        <mxCell id="cnt1_title" value="Web Application" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=24;fontColor=#173B65;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="120.0" y="305.0" width="500.0" height="30.0" as="geometry"/></mxCell>
+        <mxCell id="cnt1_tech" value="[Container: เว็บแอปในเบราว์เซอร์ Responsive · React]" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=17;fontColor=#087E8B;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="120.0" y="338.0" width="600.0" height="25.0" as="geometry"/></mxCell>
+        <mxCell id="cnt1_desc" value="หน้าค้นหารายการของที่พบ · ฟอร์มแจ้งเบาะแส · ฟอร์มแจ้งของหาย · ยื่นหลักฐาน · คิวตรวจคำร้องและจัดการคลังของ Staff&lt;br&gt;แสดงเมนูตาม role (RBAC) · ออกแบบเป็น Responsive Web (NFR-CLF-02) — ไม่เก็บข้อมูลถาวร ไม่ใช่ที่ตัดสินสิทธิ์จริง (DEC-01)" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;fontColor=#172333;" vertex="1" parent="1"><mxGeometry x="120.0" y="368.0" width="750.0" height="45.0" as="geometry"/></mxCell>
+        <mxCell id="cnt1_badge" value="หน้าจอออกแบบใน W12" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#008699;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#087E8B;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="710.0" y="410.0" width="170.0" height="28.0" as="geometry"/></mxCell>
+
+        <!-- Arrow Web to API -->
+        <mxCell id="edge_web_api" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=3;dashed=0;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="500" y="450" as="sourcePoint"/><mxPoint x="500" y="530" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="edge_web_api_text" value="เรียก API: ค้นหา · แจ้งเบาะแส · ส่งคำร้อง/หลักฐาน · ตรวจสอบ · บันทึกคืน [REST / JSON · HTTPS]" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=14;fontColor=#173B65;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="150.0" y="475.0" width="700.0" height="25.0" as="geometry"/></mxCell>
+
+        <!-- Container 2: API Application -->
+        <mxCell id="cnt2" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F7FA;strokeColor=#008699;strokeWidth=3;" vertex="1" parent="1"><mxGeometry x="100.0" y="530.0" width="800.0" height="220.0" as="geometry"/></mxCell>
+        <mxCell id="cnt2_title" value="API Application" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=24;fontColor=#173B65;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="120.0" y="545.0" width="400.0" height="30.0" as="geometry"/></mxCell>
+        <mxCell id="cnt2_tech" value="[Container: โปรแกรมฝั่ง server · Node.js + Express]" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=17;fontColor=#087E8B;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="120.0" y="578.0" width="600.0" height="25.0" as="geometry"/></mxCell>
+        <mxCell id="cnt2_desc" value="• กติกา BR-CLF-01 (เบลอร์ภาพและเซ็นเซอร์ข้อมูลส่วนบุคคล) และ NFR-CLF-01 (ตรวจสิทธิ์ RBAC ทุก Action) อยู่ที่นี่ที่เดียว&lt;br&gt;• ควบคุม State Machine: ตรึงคำร้องเป็น Pending เสมอ ป้องกันสวมรอย (D2) ก่อน Staff ตรวจ&lt;br&gt;• ตรวจขนาดไฟล์แนบหลักฐาน ≤ 10MB (FR-CLF-04) และแยก Public API ออกจาก Private Proof API&lt;br&gt;• บันทึก Audit Log ทุกครั้งที่มีการเปลี่ยนสถานะรับเข้า-จ่ายออกลงฐานข้อมูล (D3)&lt;br&gt;• จัดการ In-app Notification แจ้งเตือนสถานะคำร้อง (FR-CLF-07)" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=14;fontColor=#172333;" vertex="1" parent="1"><mxGeometry x="120.0" y="608.0" width="750.0" height="105.0" as="geometry"/></mxCell>
+
+        <!-- Driver Badges D1, D2, D3 -->
+        <mxCell id="b_d1" value="D1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#008699;strokeColor=none;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="730.0" y="545.0" width="32.0" height="32.0" as="geometry"/></mxCell>
+        <mxCell id="b_d2" value="D2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#173B65;strokeColor=none;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="770.0" y="545.0" width="32.0" height="32.0" as="geometry"/></mxCell>
+        <mxCell id="b_d3" value="D3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D89715;strokeColor=none;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="810.0" y="545.0" width="32.0" height="32.0" as="geometry"/></mxCell>
+        <mxCell id="cnt2_badge" value="DEC-01" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#008699;strokeWidth=1.5;fontFamily=Helvetica;fontSize=13;fontColor=#087E8B;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="770.0" y="715.0" width="110.0" height="28.0" as="geometry"/></mxCell>
+
+        <!-- Container 3: Database -->
+        <mxCell id="cnt3" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F7FA;strokeColor=#008699;strokeWidth=3;" vertex="1" parent="1"><mxGeometry x="100.0" y="830.0" width="420.0" height="170.0" as="geometry"/></mxCell>
+        <mxCell id="cnt3_title" value="Database" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;fontColor=#173B65;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="120.0" y="845.0" width="250.0" height="28.0" as="geometry"/></mxCell>
+        <mxCell id="cnt3_tech" value="[Container: ฐานข้อมูลเชิงสัมพันธ์ · PostgreSQL]" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;fontColor=#087E8B;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="120.0" y="875.0" width="380.0" height="22.0" as="geometry"/></mxCell>
+        <mxCell id="cnt3_desc" value="เก็บข้อมูล DR-01 ถึง DR-04 · แหล่งเดียวของ State และ Audit Log รองรับ ACID Transaction (D2, D3) เพื่อให้การเปลี่ยนสถานะและ Audit เกิดพร้อมกัน" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=14;fontColor=#172333;" vertex="1" parent="1"><mxGeometry x="120.0" y="900.0" width="380.0" height="60.0" as="geometry"/></mxCell>
+        <mxCell id="cnt3_badge" value="DEC-02" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#008699;strokeWidth=1.5;fontFamily=Helvetica;fontSize=12;fontColor=#087E8B;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="410.0" y="960.0" width="90.0" height="26.0" as="geometry"/></mxCell>
+
+        <!-- Container 4: File Storage -->
+        <mxCell id="cnt4" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F7FA;strokeColor=#008699;strokeWidth=3;" vertex="1" parent="1"><mxGeometry x="560.0" y="830.0" width="420.0" height="170.0" as="geometry"/></mxCell>
+        <mxCell id="cnt4_title" value="File Storage" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;fontColor=#173B65;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="580.0" y="845.0" width="250.0" height="28.0" as="geometry"/></mxCell>
+        <mxCell id="cnt4_tech" value="[Container: พื้นที่เก็บไฟล์ปลอดภัย · Secure Object Storage]" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;fontColor=#087E8B;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="580.0" y="875.0" width="380.0" height="22.0" as="geometry"/></mxCell>
+        <mxCell id="cnt4_desc" value="เก็บรูปถ่ายสิ่งของที่เบลอร์แล้ว (Public) และไฟล์หลักฐานยืนยันตน (DR-02 Private ≤ 10MB) ป้องกัน Direct Public URL ให้เข้าถึงผ่าน Authorized Stream เท่านั้น" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=14;fontColor=#172333;" vertex="1" parent="1"><mxGeometry x="580.0" y="900.0" width="380.0" height="60.0" as="geometry"/></mxCell>
+
+        <!-- Arrows from API to DB & File Storage -->
+        <mxCell id="edge_api_db" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=2.5;dashed=0;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="310" y="750" as="sourcePoint"/><mxPoint x="310" y="830" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="edge_api_db_text" value="SQL / Transactions" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=13;fontColor=#173B65;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="210.0" y="775.0" width="180.0" height="20.0" as="geometry"/></mxCell>
+
+        <mxCell id="edge_api_file" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=2.5;dashed=0;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="770" y="750" as="sourcePoint"/><mxPoint x="770" y="830" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="edge_api_file_text" value="Secure Stream / Multipart" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=13;fontColor=#173B65;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="670.0" y="775.0" width="200.0" height="20.0" as="geometry"/></mxCell>
+
+        <!-- External Systems on right -->
+        <!-- EXT-01 Identity -->
+        <mxCell id="ext1" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EBF4FF;strokeColor=#3182CE;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="1180.0" y="480.0" width="340.0" height="130.0" as="geometry"/></mxCell>
+        <mxCell id="ext1_title" value="EXT-01: Institutional Identity Service" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=17;fontColor=#2B6CB0;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1190.0" y="492.0" width="320.0" height="24.0" as="geometry"/></mxCell>
+        <mxCell id="ext1_sub" value="[Software System · Core Boundary · TBD / DD-01]" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=13;fontColor=#C53030;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1190.0" y="518.0" width="320.0" height="20.0" as="geometry"/></mxCell>
+        <mxCell id="ext1_desc" value="ระบบยืนยันตัวตนมหาวิทยาลัย (SSO)&#xa;ส่ง User Identity และ Role Claims (Staff / Student)&#xa;รุ่นแรกใช้ Role Fixture ทดสอบ (DD-01)" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=13;fontColor=#4A5568;" vertex="1" parent="1"><mxGeometry x="1190.0" y="542.0" width="320.0" height="60.0" as="geometry"/></mxCell>
+
+        <!-- Arrow API to EXT-01 -->
+        <mxCell id="edge_api_ext1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#3182CE;strokeWidth=2.5;dashed=1;endArrow=block;endFill=1;startArrow=block;startFill=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="900" y="570" as="sourcePoint"/><mxPoint x="1175" y="570" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="edge_api_ext1_text" value="คำขอ Auth &lt;br&gt;[protocol = TBD / DD-01]" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=13;fontColor=#2B6CB0;" vertex="1" parent="1"><mxGeometry x="930.0" y="535.0" width="210.0" height="35.0" as="geometry"/></mxCell>
+
+        <!-- EXT-02 Notification -->
+        <mxCell id="ext2" value="" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F7FAFC;strokeColor=#718096;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="1180.0" y="680.0" width="340.0" height="130.0" as="geometry"/></mxCell>
+        <mxCell id="ext2_title" value="EXT-02: External Notification Service" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=17;fontColor=#4A5568;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1190.0" y="692.0" width="320.0" height="24.0" as="geometry"/></mxCell>
+        <mxCell id="ext2_sub" value="[Software System · Extension · In-app first / DD-03]" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=13;fontColor=#D69E2E;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1190.0" y="718.0" width="320.0" height="20.0" as="geometry"/></mxCell>
+        <mxCell id="ext2_desc" value="บริการแจ้งเตือนภายนอก (Email / LINE Notify)&#xa;ส่งข้อความเมื่อสถานะคำร้องเปลี่ยน (FR-CLF-07)&#xa;รุ่นแรกรองรับ In-app Notification ก่อน" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=13;fontColor=#4A5568;" vertex="1" parent="1"><mxGeometry x="1190.0" y="742.0" width="320.0" height="60.0" as="geometry"/></mxCell>
+
+        <!-- Arrow API to EXT-02 -->
+        <mxCell id="edge_api_ext2" style="edgeStyle=none;html=1;rounded=0;strokeColor=#718096;strokeWidth=2.5;dashed=1;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="900" y="720" as="sourcePoint"/><mxPoint x="1175" y="720" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="edge_api_ext2_text" value="ส่ง Event แจ้งเตือน&lt;br&gt;[Extension / DD-03]" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=Helvetica;fontSize=13;fontColor=#718096;" vertex="1" parent="1"><mxGeometry x="930.0" y="685.0" width="210.0" height="35.0" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

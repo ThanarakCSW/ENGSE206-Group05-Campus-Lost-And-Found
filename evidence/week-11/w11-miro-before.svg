@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" width="1600" height="1100" style="background-color:#F5F6F8; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.12"/>
+    </filter>
+    <filter id="sticky_shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Miro Canvas Header -->
+  <rect x="0" y="0" width="1600" height="60" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="30" y="38" fill="#1A202C" font-size="20" font-weight="bold">Miro · ENGSE206 W11 Architecture Review Board — Group 05 Frame (Before Revision - 29 ก.ย.)</text>
+
+  <!-- Main Frame Border -->
+  <rect x="30" y="80" width="1540" height="990" rx="12" fill="#FFFFFF" stroke="#CBD5E0" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="30" y="80" width="1540" height="50" rx="12" fill="#EDF2F7"/>
+  <text x="50" y="112" fill="#2D3748" font-size="18" font-weight="bold">Frame 05: Campus Lost and Found (ระบบแจ้งของหาย-พบของในมหาวิทยาลัย) — Draft v0.1</text>
+  <text x="1350" y="112" fill="#718096" font-size="14">สมาชิก: ธนรัก · นรบดี</text>
+
+  <!-- Section 1: Context Diagram Thumbnail -->
+  <g transform="translate(60, 160)">
+    <rect x="0" y="0" width="480" height="360" rx="8" fill="#F8FAFC" stroke="#CBD5E0" stroke-width="1.5"/>
+    <text x="20" y="30" fill="#173B65" font-size="16" font-weight="bold">1. System Context Diagram (C4 Level 1)</text>
+    <rect x="20" y="45" width="440" height="295" rx="6" fill="#EBF8FF" stroke="#3182CE" stroke-width="1" stroke-dasharray="4 4"/>
+    <rect x="160" y="120" width="140" height="130" rx="6" fill="#173B65"/>
+    <text x="230" y="180" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="bold">Campus Lost &amp; Found</text>
+    <text x="230" y="200" text-anchor="middle" fill="#DCE8F2" font-size="10">(System 1 Box)</text>
+    <!-- Actors Icons -->
+    <rect x="40" y="80" width="80" height="40" rx="4" fill="#FFFFFF" stroke="#CBD5E0"/>
+    <text x="80" y="105" text-anchor="middle" fill="#2D3748" font-size="10">Requester</text>
+    <rect x="40" y="150" width="80" height="40" rx="4" fill="#FFFFFF" stroke="#CBD5E0"/>
+    <text x="80" y="175" text-anchor="middle" fill="#2D3748" font-size="10">Finder</text>
+    <rect x="40" y="220" width="80" height="40" rx="4" fill="#FFFFFF" stroke="#CBD5E0"/>
+    <text x="80" y="245" text-anchor="middle" fill="#2D3748" font-size="10">Staff</text>
+    <!-- Externals -->
+    <rect x="330" y="100" width="110" height="40" rx="4" fill="#FFFFFF" stroke="#3182CE"/>
+    <text x="385" y="125" text-anchor="middle" fill="#2B6CB0" font-size="9">EXT-01 Identity (TBD)</text>
+    <rect x="330" y="190" width="110" height="40" rx="4" fill="#FFFFFF" stroke="#718096"/>
+    <text x="385" y="215" text-anchor="middle" fill="#4A5568" font-size="9">EXT-02 Notification</text>
+  </g>
+
+  <!-- Section 2: Container Diagram Thumbnail -->
+  <g transform="translate(570, 160)">
+    <rect x="0" y="0" width="500" height="360" rx="8" fill="#F8FAFC" stroke="#CBD5E0" stroke-width="1.5"/>
+    <text x="20" y="30" fill="#173B65" font-size="16" font-weight="bold">2. Container Diagram (C4 Level 2)</text>
+    
+    <rect x="30" y="60" width="440" height="65" rx="6" fill="#F1F7FA" stroke="#008699" stroke-width="1.5"/>
+    <text x="45" y="88" fill="#173B65" font-size="13" font-weight="bold">Web Application [React · Responsive Web]</text>
+    <text x="45" y="108" fill="#718096" font-size="11">หน้าจอค้นหา, แจ้งเบาะแส, ยื่นหลักฐาน, จัดการคลัง</text>
+
+    <rect x="30" y="145" width="440" height="95" rx="6" fill="#F1F7FA" stroke="#008699" stroke-width="1.5"/>
+    <text x="45" y="172" fill="#173B65" font-size="13" font-weight="bold">API Application [Node.js + Express]</text>
+    <text x="45" y="192" fill="#172333" font-size="11">กติกา BR-CLF-01, RBAC NFR-CLF-01, State Guard (Pending)</text>
+    <text x="45" y="212" fill="#172333" font-size="11">ตรวจไฟล์ ≤10MB, บันทึก Audit Log ทุก action</text>
+
+    <rect x="30" y="260" width="210" height="70" rx="6" fill="#F1F7FA" stroke="#008699" stroke-width="1.5"/>
+    <text x="40" y="288" fill="#173B65" font-size="12" font-weight="bold">Database [PostgreSQL]</text>
+    <text x="40" y="308" fill="#718096" font-size="10">DR-01–04, State, AuditLog</text>
+
+    <rect x="260" y="260" width="210" height="70" rx="6" fill="#F1F7FA" stroke="#008699" stroke-width="1.5"/>
+    <text x="270" y="288" fill="#173B65" font-size="12" font-weight="bold">File Storage [Object Storage]</text>
+    <text x="270" y="308" fill="#718096" font-size="10">รูปภาพเบลอร์แล้ว, หลักฐาน private</text>
+  </g>
+
+  <!-- Section 3: Decision Cards -->
+  <g transform="translate(60, 545)">
+    <rect x="0" y="0" width="1010" height="200" rx="8" fill="#F8FAFC" stroke="#CBD5E0" stroke-width="1.5"/>
+    <text x="20" y="28" fill="#173B65" font-size="16" font-weight="bold">3. Decision Cards (DEC-01 ถึง DEC-04)</text>
+    
+    <!-- DEC-01 -->
+    <rect x="20" y="45" width="230" height="135" rx="6" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="30" y="70" fill="#087E8B" font-size="13" font-weight="bold">DEC-01: กติกาความปลอดภัยที่ API</text>
+    <text x="30" y="92" fill="#2D3748" font-size="11">เพราะ: D1, D2, NFR-CLF-01</text>
+    <text x="30" y="112" fill="#718096" font-size="10">API เป็นที่เดียวที่ตรวจสิทธิ์</text>
+    <text x="30" y="128" fill="#718096" font-size="10">และเซ็นเซอร์ข้อมูลส่วนบุคคล</text>
+
+    <!-- DEC-02 -->
+    <rect x="265" y="45" width="230" height="135" rx="6" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="275" y="70" fill="#087E8B" font-size="13" font-weight="bold">DEC-02: DB Transaction &amp; State</text>
+    <text x="275" y="92" fill="#2D3748" font-size="11">เพราะ: D2, D3, FR-CLF-05</text>
+    <text x="275" y="112" fill="#718096" font-size="10">การเปลี่ยนสถานะและ Audit Log</text>
+    <text x="275" y="128" fill="#718096" font-size="10">อยู่ใน ACID transaction เดียวกัน</text>
+
+    <!-- DEC-03 -->
+    <rect x="510" y="45" width="230" height="135" rx="6" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="520" y="70" fill="#087E8B" font-size="13" font-weight="bold">DEC-03: Responsive Web เดียว</text>
+    <text x="520" y="92" fill="#2D3748" font-size="11">เพราะ: NFR-CLF-02, UC-01–06</text>
+    <text x="520" y="112" fill="#718096" font-size="10">ทุก actor ใช้ผ่าน browser ได้</text>
+    <text x="520" y="128" fill="#718096" font-size="10">ไม่ต้องแยก Native Mobile App</text>
+
+    <!-- DEC-04 -->
+    <rect x="755" y="45" width="230" height="135" rx="6" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="765" y="70" fill="#087E8B" font-size="13" font-weight="bold">DEC-04: Stack อ้างอิงรายวิชา</text>
+    <text x="765" y="92" fill="#2D3748" font-size="11">เพราะ: ตรงตามสเปก DEC-01–03</text>
+    <text x="765" y="112" fill="#718096" font-size="10">React · Node.js + Express ·</text>
+    <text x="765" y="128" fill="#718096" font-size="10">PostgreSQL · ทีมคุ้นเคย</text>
+  </g>
+
+  <!-- Section 4: Spine Walk Summary -->
+  <g transform="translate(60, 765)">
+    <rect x="0" y="0" width="1010" height="270" rx="8" fill="#F8FAFC" stroke="#CBD5E0" stroke-width="1.5"/>
+    <text x="20" y="28" fill="#173B65" font-size="16" font-weight="bold">4. Design Spine บน Container Diagram (7 แถว)</text>
+    
+    <g font-size="12" fill="#2D3748">
+      <text x="30" y="65">1. แจ้งเบาะแสไม่ระบุตัวตน (UC-03) → Web/Mobile → API (Anonymous Intake) → Database &amp; File Storage</text>
+      <text x="30" y="95">2. รับเข้าคลังและเบลอร์ภาพ (UC-01, UC-06) → Web (Staff) → API (Redaction &amp; Blurring) → Database &amp; File Storage</text>
+      <text x="30" y="125">3. ค้นหารายการของที่พบ (UC-01, UC-02) → Web/Mobile → API (Public Filtered View) → Database</text>
+      <text x="30" y="155">4. ยื่นคำร้องแนบหลักฐาน ≤10MB (UC-04) → Web/Mobile → API (Upload Validator, Pending Gate) → Database &amp; Storage</text>
+      <text x="30" y="185">5. ตรวจหลักฐานและตัดสินใจ (UC-05) → Web (Staff) → API (Private Viewer, State Decision) → Database (Audit Log)</text>
+      <text x="30" y="215">6. ติดต่อรับของและปิดงานส่งมอบ (UC-05) → Web (Staff) → API (Handover Logger, State=Returned) → Database</text>
+      <text x="30" y="245">7. รายงานสิ่งของตกค้างเกินกำหนด (Overview) → Web (Staff/Admin) → API (Report Generator) → Database</text>
+    </g>
+  </g>
+
+  <!-- Right Side: Peer Feedback Space with Sticky Notes -->
+  <g transform="translate(1100, 160)">
+    <rect x="0" y="0" width="440" height="875" rx="10" fill="#FFF9ED" stroke="#D89715" stroke-width="2"/>
+    <text x="25" y="35" fill="#975A16" font-size="18" font-weight="bold">Peer Review Feedback (กลุ่มคู่ตรวจ)</text>
+    <text x="25" y="58" fill="#B7791F" font-size="12">แปะเมื่อ 29 ก.ย. 2569 โดย Group 06</text>
+
+    <!-- Mandatory Question Sticky (Orange) -->
+    <g transform="translate(25, 80)" filter="url(#sticky_shadow)">
+      <rect x="0" y="0" width="390" height="140" fill="#FED7D7" stroke="#FEB2B2" rx="4"/>
+      <text x="20" y="30" fill="#9B2C2C" font-size="14" font-weight="bold">[คำถามบังคับของรายวิชา]</text>
+      <text x="20" y="58" fill="#742A2A" font-size="14" font-weight="bold">driver ที่ห้ามพลาดของทีม อยู่ container ไหน?</text>
+      <text x="20" y="85" fill="#742A2A" font-size="12">(D1 ข้อมูลส่วนบุคคลห้ามหลุด, D2 ห้ามรับของทันที,</text>
+      <text x="20" y="105" fill="#742A2A" font-size="12">D3 Audit Log ตรวจสอบได้ อยู่กล่องไหนบ้าง?)</text>
+    </g>
+
+    <!-- Green Sticky (Compliment) -->
+    <g transform="translate(25, 250)" filter="url(#sticky_shadow)">
+      <rect x="0" y="0" width="390" height="120" fill="#C6F6D5" stroke="#9AE6B4" rx="4"/>
+      <text x="20" y="30" fill="#22543D" font-size="14" font-weight="bold">✓ ข้อดี / จุดเด่นที่ชอบ</text>
+      <text x="20" y="58" fill="#22543D" font-size="13">การแยก Public API กับ Private API</text>
+      <text x="20" y="80" fill="#22543D" font-size="13">และแยก File Storage สำหรับภาพเบลอร์ vs หลักฐาน</text>
+      <text x="20" y="102" fill="#22543D" font-size="13">ชัดเจนมาก ตรงตามหลัก PDPA ดีเยี่ยม</text>
+    </g>
+
+    <!-- Yellow Sticky (Suggestion / Issue) -->
+    <g transform="translate(25, 400)" filter="url(#sticky_shadow)">
+      <rect x="0" y="0" width="390" height="130" fill="#FEFCBF" stroke="#F6E05E" rx="4"/>
+      <text x="20" y="30" fill="#744210" font-size="14" font-weight="bold">! ข้อควรปรับปรุง (DEC-01)</text>
+      <text x="20" y="58" fill="#744210" font-size="13">DEC-01 ระบุว่ากติกาอยู่ที่ API Application</text>
+      <text x="20" y="80" fill="#744210" font-size="13">แต่ช่อง 'เพราะ' อ้างแค่ NFR-CLF-01 ควรอ้างถึง</text>
+      <text x="20" y="102" fill="#744210" font-size="13">BR-CLF-01 (เรื่องการเบลอร์ภาพ) ด้วย จะครบถ้วนขึ้น</text>
+    </g>
+
+    <!-- Pink Sticky (Thought Question) -->
+    <g transform="translate(25, 560)" filter="url(#sticky_shadow)">
+      <rect x="0" y="0" width="390" height="130" fill="#FED7E2" stroke="#FBB6CE" rx="4"/>
+      <text x="20" y="30" fill="#702459" font-size="14" font-weight="bold">? คำถามชวนคิดเรื่อง Container</text>
+      <text x="20" y="58" fill="#702459" font-size="13">ถ้ามีคนแจ้งเบาะแสหรืออัปโหลดหลักฐานพร้อมกัน</text>
+      <text x="20" y="80" fill="#702459" font-size="13">หลายไฟล์ ไฟล์ขนาดใหญ่ ระบบมีอะไรคุมไม่ให้ server ล่ม?</text>
+      <text x="20" y="102" fill="#702459" font-size="13">ควรระบุใน API หรือ File Storage ให้ชัด</text>
+    </g>
+
+  </g>
+</svg>
