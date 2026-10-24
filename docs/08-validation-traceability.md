@@ -1,11 +1,10 @@
 # 08 — Validation, Traceability and Baseline Management
 
-> **Case:** Campus Lost and Found (Case-05)  
-> **Week:** Week 05 Consolidation Studio (Requirement Baseline Review & Readiness Gate)  
-> **Status:** Baseline v1.0 Approved & Locked  
-> **Target:** ส่งมอบฐานความต้องการสอดคล้อง 100% สำหรับการทำ Requirement Modeling ใน Week 06
+> เอกสารนี้มี 2 ส่วนหลัก: **ส่วน A** บันทึกการตรวจ Baseline Review (W05b) · **ส่วน B** บันทึกการตรวจ Post-SRS Validation, Traceability และ Change Management (W08)
 
 ---
+
+## ส่วน A — Baseline Traceability (W05b)
 
 ## 1. Validation Plan
 
@@ -87,3 +86,82 @@
 - **Approved/Reviewed by:** ทีม Group05 (ธนรัก ชุ่มสวัสดิ์ - Facilitator, นรบดี บุญเลิศ - Quality Checker / Scribe)
 - **Remaining Open Issues:** `ISSUE-CLF-01` (Unclaimed retention policy), `ISSUE-CLF-02` (AI auto-censor architecture)
 - **Sign-off Summary:** ฐานความต้องการ Campus Lost and Found ผ่านเกณฑ์ Readiness Gate ครบ 5 ข้อ สมบูรณ์สำหรับการนำไปทำ Requirement Models (User Story, Use Case, AC, State Machine) ใน Week 06
+
+---
+
+## ส่วน B — Post-SRS Review, Traceability and Change Management (W08)
+
+> เติมใน Week 8 หลังจัดทำ `docs/07-srs-v1.md` (SRS Draft v1) เสร็จสิ้น  
+> ตรวจสอบความสอดคล้อง (Consistency), ความสมบูรณ์ (Completeness), การสืบย้อนกลับได้แบบสองทิศทาง (Bidirectional Traceability) และวิเคราะห์ผลกระทบกรณีมีคำขอเปลี่ยนแปลง (Change Scenario)
+
+### B1. Validation Plan
+
+| Validation Activity | Artefacts Evaluated | Participants & Roles | Quality Criteria | Verification Evidence Link |
+|---|---|---|---|---|
+| V-1 Walkthrough & Checklist Review | `docs/07-srs-v1.md` (SRS Draft v1) | Reviewer: นรบดี บุญเลิศ<br>Author/Defend: ธนรัก ชุ่มสวัสดิ์ | Completeness, Unambiguity, Consistency เทียบกับ Baseline v1.0 และ Models W06 | B2 (Review Findings) |
+| V-2 Seeded Error / Training Check | ข้อความจำลองกระบวนการส่งหลักฐาน | ทั้งทีม (ธนรัก, นรบดี) | ความสอดคล้องกับ BR-CLF-01, FR-CLF-05 และ UC-05 | B2 (RV-01-SIM) |
+| V-3 Bidirectional Traceability Lab | `docs/04` -> `docs/05` -> `docs/06` -> `docs/07` | ธนรัก ชุ่มสวัสดิ์, นรบดี บุญเลิศ | ลากสายเดินหน้า (Forward) และย้อนกลับ (Backward) ได้ครบ 100% | B3 (Traceability Matrix) |
+| V-4 Change Scenario & Impact Analysis | คำขอเปลี่ยนจำลอง (CR-01-SIM) | ทั้งทีม | วิเคราะห์ผลกระทบต่อ FR, BR, UC, AC, Test Case และนโยบาย | B4 และ `docs/requirements-change-log.md` |
+
+---
+
+### B2. Review Findings (ผลการตรวจทาน SRS Draft v1)
+
+| Finding ID | ตำแหน่งใน SRS | ข้อค้นพบ / สภาพปัญหา | ระดับความรุนแรง | ประเภทการจัดการ | แนวทางแก้ไข / การจัดการ |
+|---|---|---|---|---|---|
+| RV-01-SIM | หัวข้อ 2.3 & 3 (FR-CLF-04/05) | **ข้อความฝึกจำลอง (Seeded Error):** "เมื่อผู้ทำของหายยื่นคำร้อง ระบบจะเปลี่ยนสถานะเป็น Verified และนัดรับของทันที" ขัดกับกติกาความปลอดภัยที่ต้องให้เจ้าหน้าที่ตรวจสอบหลักฐานก่อน | High | แก้ไขข้อความทันที | ปรับแก้เป็น: "เมื่อยื่นคำร้อง สถานะเริ่มต้นเป็น Pending เพื่อให้เจ้าหน้าที่เปิดตรวจหลักฐานแบบส่วนตัวก่อนเปลี่ยนเป็น Verified หรือ Rejected" (ใน SRS จริงเขียนถูกต้องแล้ว) |
+| RV-02 | หัวข้อ 1.3 & 8 (ISSUE-CLF-01) | ระยะเวลาจัดเก็บของตกค้าง (Unclaimed Items) ยังคงเป็น TBD รอการยืนยันนโยบายจากผู้บริหาร | Medium | Open Issue (OI-CLF-01) | คงสถานะ TBD ไว้ใน SRS โดยไม่แต่งตัวเลขขึ้นเอง และบันทึกไว้ใน Open Question Log |
+| RV-03 | หัวข้อ 1.3 & 8 (ISSUE-CLF-02) | วิธีการเซ็นเซอร์ภาพส่วนบุคคล (AI Auto-censor vs Manual Staff Blurring) อยู่ระหว่างรอการประเมินความคุ้มทุน | Medium | Open Issue (OI-CLF-02) | กำหนดให้ใช้การเบลอร์แบบ Manual โดยผู้ส่ง/เจ้าหน้าที่ เป็นค่าเริ่มต้น (Baseline) ก่อนขยายสู่ AI ในอนาคต |
+| CR-01-SIM | หัวข้อ 3 (FR-CLF-02) | คำขอเสนอระบบจับคู่อัตโนมัติ (AI Auto-matching) ทันทีที่แจ้งของหาย | — | Change Request (Simulated) | บันทึกใน Change Log และวิเคราะห์ผลกระทบ โดยคงสถานะเป็น **Pending** (ไม่แก้ Baseline ปัจจุบัน) |
+
+**Before / After ของข้อความฝึก (RV-01-SIM):**
+> **Before (ผิด):** เมื่อผู้ทำของหายกดส่งคำร้องยืนยันความเป็นเจ้าของ ระบบจะเปลี่ยนสถานะเป็น Verified ให้ทันทีเพื่อความสะดวก  
+> **After (ถูกต้อง):** เมื่อผู้ทำของหายส่งคำร้องและแนบหลักฐาน (≤ 10MB) ระบบจะบันทึกสถานะเป็น Pending จากนั้นส่งให้เจ้าหน้าที่ตรวจสอบเปรียบเทียบกับสิ่งของจริงก่อนเปลี่ยนสถานะเป็น Verified หรือ Rejected พร้อมระบุเหตุผล (ตาม FR-CLF-05 และ AC-06)
+
+---
+
+### B3. Traceability Matrix — เดินได้ทั้งไปและกลับ
+
+#### B3.1 Forward Traceability: จากปัญหาและหลักฐาน สู่ SRS และวิธีตรวจรับ
+
+| Evidence (E-ID) | Need (N-ID) | Candidate (RC) | Requirement (FR/NFR/BR) | Model (US / UC / AC) | หัวข้อใน SRS v1 | วิธีตรวจรับที่วางแผน (Verification Method) | สถานะความครอบคลุม |
+|---|---|---|---|---|---|---|---|
+| E-01 | N-01 | RC-01 | FR-CLF-01 | US-01 / UC-01 / AC-01, AC-02 | หัวข้อ 3.1 | Test Case: Benchmark เวลาเรียกดูและค้นหารายการในคลัง (≤ 3 วินาที) | ✔ ครบถ้วน |
+| E-01, E-02 | N-01, N-02 | RC-01 | FR-CLF-02 | US-02 / UC-02 / AC-03 | หัวข้อ 3.1 | Form Validation Test: ตรวจสอบ 3 ฟิลด์บังคับ (ชื่อ, หมวดหมู่, สถานที่) | ✔ ครบถ้วน |
+| E-04 | N-04 | RC-04 | FR-CLF-03 | US-03 / UC-03 / AC-04 | หัวข้อ 3.1 | Inspection: ทดสอบการแจ้งเบาะแสโดยไม่ระบุตัวตน (Anonymous Report) | ✔ ครบถ้วน |
+| E-02 | N-02 | RC-02 | FR-CLF-04 | US-04 / UC-04 / AC-05 | หัวข้อ 3.1 | Security & Limit Test: ตรวจสอบขนาดไฟล์แนบ (≤ 10MB) และสิทธิ์การเข้าถึงส่วนตัว | ✔ ครบถ้วน |
+| E-01, E-02 | N-02 | RC-02 | FR-CLF-05 | US-05 / UC-05 / AC-06 | หัวข้อ 3.1 | State Transition Test: ทดสอบเปลี่ยนสถานะ 4 ค่า (pending, verified, rejected, returned) พร้อมเหตุผล | ✔ ครบถ้วน |
+| E-03 | N-03 | RC-03 | BR-CLF-01 | US-06 / UC-06 / AC-07 | หัวข้อ 6.1 | Privacy Inspection: ตรวจสอบการเบลอร์ภาพและการปิดบังเลขบัตร/ข้อมูลติดต่อในหน้าสาธารณะ | ✔ ครบถ้วน |
+| E-03 | N-03 | RC-03 | NFR-CLF-01 | US-07 / UC-06 / AC-08 | หัวข้อ 4.1 | RBAC Authorization Test: ตรวจสิทธิ์ 4 บทบาท (Public, Requester, Staff, IT Admin) | ✔ ครบถ้วน |
+
+#### B3.2 Backward Traceability: เดินย้อนกลับจาก Acceptance Criteria สู่ Evidence
+
+| เริ่มต้นจาก AC | เชื่อมกับ Use Case / Flow | ชี้ไปยัง Requirement | ย้อนสู่ Need & Evidence | ผลการตรวจสอบการสืบย้อนกลับ |
+|---|---|---|---|---|
+| **AC-05** แนบไฟล์หลักฐาน ≤ 10MB ส่งตรงถึงเจ้าหน้าที่แบบส่วนตัว | UC-04 (Main Flow) | FR-CLF-04 | N-02 ← E-02 (ความกังวลเรื่องมิจฉาชีพสวมรอย) | ✔ เดินครบถ้วน: มีไฟล์และหลักฐานยืนยันชัดเจนใน `docs/04` |
+| **AC-06** เจ้าหน้าที่เปลี่ยนสถานะ 4 ค่าพร้อมบันทึกเหตุผลประกอบ | UC-05 (Main & Alternate Flows) | FR-CLF-05 | N-02 ← E-01, E-02 (ป้องกันการส่งมอบของผิดคน) | ✔ เดินครบถ้วน: มีเกณฑ์การตรวจรับและสอดคล้องกับ State Lifecycle |
+| **AC-07** ปิดบังข้อมูลส่วนบุคคลและเบลอร์ภาพก่อนแสดงผลสาธารณะ | UC-06 (Main Flow) | BR-CLF-01 | N-03 ← E-03 (ความเสี่ยงละเมิด PDPA จากภาพถ่าย) | ✔ เดินครบถ้วน: มีที่มาจากข้อกฎหมาย PDPA และความต้องการของ IT Admin |
+
+#### B3.3 Coverage Summary
+
+- **Must Requirements (7 ข้อ):** เชื่อมโยงครบทั้ง 100% สู่ User Stories, Use Cases, Acceptance Criteria และมีหัวข้อรองรับใน SRS Draft v1
+- **Trace Gap:** ไม่มี Requirement ลอย (Unlinked Requirement) และไม่มี Use Case ที่ขาดที่มาจากความต้องการของผู้มีส่วนได้ส่วนเสีย
+- **Open Issues:** ประเด็นระยะเวลาจัดเก็บ (OI-CLF-01) และสถาปัตยกรรมเซ็นเซอร์ภาพ (OI-CLF-02) ถูกระบุสถานะชัดเจนเป็น TBD เพื่อรอการพัฒนาต่อยอด
+
+---
+
+### B4. Change Request & Impact Analysis
+
+| CR-ID | วันที่บันทึก | รายละเอียดคำขอเปลี่ยนแปลง (Requested Change) | เหตุผล / ที่มา | การวิเคราะห์ผลกระทบ (Impact Analysis) | สถานะการตัดสินใจ | ผู้มีอำนาจตัดสินใจ |
+|---|---|---|---|---|---|---|
+| **CR-01-SIM** | 2026-09-15 | เสนอให้เพิ่มระบบจับคู่อัตโนมัติ (AI Auto-matching) ระหว่างคำร้องของหายกับรายการของที่พบในคลังทันทีที่บันทึกข้อมูล | ผู้ใช้งาน (ในสถานการณ์จำลอง) ต้องการทราบผลการจับคู่ทันทีโดยไม่ต้องรอค้นหา | • **Requirement:** กระทบ FR-CLF-02 และต้องเพิ่ม FR-CLF-10 (Auto-matching)<br>• **Models:** กระทบ UC-02, UC-05 และต้องเพิ่ม AC ด้านความแม่นยำของ AI<br>• **Risk:** อาจเกิด False Positive ทำให้แจ้งเตือนผิดพลาด หรือเกิดความเสี่ยงส่งมอบผิดคนหากไม่มีเจ้าหน้าที่ยืนยัน<br>• **Architecture:** ต้องเพิ่มบริการ AI Matcher และจัดการภาระประมวลผล | **Pending** (ยังไม่รับเข้า Baseline) | Product Owner / ผู้บริหาร (ทีมไม่มีอำนาจอนุมัติเปลี่ยน Scope กลางคัน) |
+
+---
+
+### B5. Baseline Decision for Midterm Snapshot
+
+- **สถานะการล็อก:** ผ่านการตรวจทานความสอดคล้องและพร้อมสำหรับการจัดทำ Midterm Snapshot
+- **Tag ที่ใช้ล็อก:** `midterm-snapshot`
+- **มติทีม:** ให้คงชุดความต้องการ Baseline v1.0 และโครงสร้าง SRS Draft v1 ไว้เป็นหลักฐานสำหรับการสอบกลางภาค โดยไม่รับคำขอเปลี่ยนแปลง CR-01-SIM เข้ามาในรอบนี้
+- **ผู้รับรอง:** ธนรัก ชุ่มสวัสดิ์ (Facilitator), นรบดี บุญเลิศ (Quality Checker) วันที่ 21 กันยายน 2569
+

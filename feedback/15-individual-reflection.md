@@ -11,7 +11,7 @@
 ### Student Information
 | Field | Detail |
 |---|---|
-| Student ID | 68543210018-6 |
+| Student ID | [ซ่อนตามนโยบาย PDPA ของรายวิชา] |
 | Name | ธนรัก ชุ่มสวัสดิ์ |
 | Primary Role(s) | Facilitator, Requirements Lead, Traceability Auditor |
 
@@ -45,7 +45,7 @@
 ### Student Information
 | Field | Detail |
 |---|---|
-| Student ID | 68543210013-7|
+| Student ID | [ซ่อนตามนโยบาย PDPA ของรายวิชา] |
 | Name | นรบดี บุญเลิศ |
 | Primary Role(s) | Quality Checker, Scribe, Timekeeper |
 

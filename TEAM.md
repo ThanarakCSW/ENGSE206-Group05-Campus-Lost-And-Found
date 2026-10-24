@@ -6,12 +6,12 @@
 
 | รายการ | รายละเอียด |
 |---|---|
-| กลุ่ม | Group XX |
-| ชื่อโครงงาน | [ชื่อระบบภาษาไทย] / [English Project Name] |
-| Case Card | [หมายเลขและชื่อ Case Card ที่อาจารย์มอบหมาย] |
-| Repository URL | [วาง URL GitHub] |
-| ช่องทางสื่อสารหลัก | [เช่น LINE / Discord / Microsoft Teams] |
-| วันประชุมประจำ | [วัน/เวลา] |
+| กลุ่ม | Group 05 |
+| ชื่อโครงงาน | ระบบแจ้งของหาย-พบของในมหาวิทยาลัย / Campus Lost and Found |
+| Case Card | Case 05: ระบบแจ้งของหาย-พบของในมหาวิทยาลัย |
+| Repository URL | https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found.git |
+| ช่องทางสื่อสารหลัก | LINE (ประชุมตามความสะดวก / นัดหมายเป็นรอบๆ) |
+| วันประชุมประจำ | นัดหมายตามรอบงานและช่วงเวลาว่างตรงกันของสมาชิก |
 
 ## สมาชิกและบทบาท
 
@@ -20,10 +20,8 @@
 
 | ชื่อ-นามสกุล | GitHub username (ทุกชื่อที่ใช้ commit) | บทบาทหลัก | รับผิดชอบเริ่มต้น | หลักฐานการทำงานที่คาดหวัง |
 |---|---|---|---|---|
-| [ชื่อ] | [username] | Team Coordinator | ประสานงาน/ติดตามความคืบหน้า | meeting notes, worklog |
-| [ชื่อ] | [username] | Requirements Lead | elicitation / backlog / SRS | requirement docs |
-| [ชื่อ] | [username] | Design Lead | diagrams / architecture / detailed design | design docs, diagrams |
-| [ชื่อ] | [username] | UX & Evidence Lead | prototype / usability / evidence | evidence, prototype |
+| ธนรัก ชุ่มสวัสดิ์ | `ThanarakCSW` (commit names: `ThanarakCSW`, `THANARAK`) | Facilitator / Requirements Lead / Traceability Auditor | ประสานงานภาพรวม, กำกับ Scope, ตรวจสอบ Traceability และจัดทำเอกสารความต้องการหลัก | `docs/01`, `docs/05`, `docs/07`, `docs/08`, `worklog` |
+| นรบดี บุญเลิศ | `nara-bodee` (commit names: `Narabodee`, `Narabodee Boonlead`) | Quality Checker / Scribe / Timekeeper / Designer | ตรวจสอบคุณภาพความต้องการ (Verifiable, Unambiguous), ออกแบบแบบจำลองและไดอะแกรม, บันทึกข้อตัดสินใจ | `diagrams/`, `docs/02`, `docs/03`, `docs/06`, `decision-log` |
 
 ## กติกาทีม
 

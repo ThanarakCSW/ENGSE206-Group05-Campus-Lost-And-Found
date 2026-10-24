@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850" width="1000" height="850" style="background:#ffffff; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#4a5568" />
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="500" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a202c">Activity Diagram: กระบวนการยื่นหลักฐาน ตรวจสอบ และส่งมอบสิ่งของ (UC-04, UC-05)</text>
+  <text x="500" y="60" text-anchor="middle" font-size="13" fill="#718096">Campus Lost and Found System — Group 05</text>
+
+  <!-- Swimlane Headers -->
+  <rect x="50" y="80" width="300" height="40" fill="#ebf8ff" stroke="#3182ce" stroke-width="1.5" />
+  <text x="200" y="105" text-anchor="middle" font-size="15" font-weight="bold" fill="#2b6cb0">ผู้ทำของหาย (Requester)</text>
+
+  <rect x="350" y="80" width="300" height="40" fill="#fefcbf" stroke="#d69e2e" stroke-width="1.5" />
+  <text x="500" y="105" text-anchor="middle" font-size="15" font-weight="bold" fill="#b7791f">ระบบส่วนกลาง (System)</text>
+
+  <rect x="650" y="80" width="300" height="40" fill="#feebc8" stroke="#dd6b20" stroke-width="1.5" />
+  <text x="800" y="105" text-anchor="middle" font-size="15" font-weight="bold" fill="#c05621">เจ้าหน้าที่ศูนย์รับของหาย (Staff)</text>
+
+  <!-- Swimlane Bodies -->
+  <rect x="50" y="120" width="300" height="700" fill="#f7fafc" stroke="#e2e8f0" stroke-width="1.5" />
+  <rect x="350" y="120" width="300" height="700" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+  <rect x="650" y="120" width="300" height="700" fill="#f7fafc" stroke="#e2e8f0" stroke-width="1.5" />
+
+  <!-- Start Node -->
+  <circle cx="200" cy="150" r="12" fill="#2d3748" />
+
+  <!-- Action 1: Requester finds item -->
+  <rect x="110" y="190" width="180" height="55" rx="8" fill="#ffffff" stroke="#3182ce" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="200" y="213" text-anchor="middle" font-size="12" font-weight="500" fill="#2d3748">ค้นหารายการของที่พบในระบบ</text>
+  <text x="200" y="230" text-anchor="middle" font-size="10" fill="#718096">และระบุรายการที่ต้องการขอคืน</text>
+
+  <!-- Action 2: Requester submits proof -->
+  <rect x="100" y="280" width="200" height="60" rx="8" fill="#ffffff" stroke="#3182ce" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="200" y="303" text-anchor="middle" font-size="12" font-weight="500" fill="#2d3748">ยื่นคำร้องยืนยันความเป็นเจ้าของ</text>
+  <text x="200" y="320" text-anchor="middle" font-size="10" fill="#718096">แนบไฟล์หลักฐาน/ภาพถ่าย (UC-04)</text>
+
+  <!-- Action 3: System checks file -->
+  <polygon points="500,275 570,310 500,345 430,310" fill="#fffaf0" stroke="#d69e2e" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="500" y="307" text-anchor="middle" font-size="11" font-weight="500" fill="#744210">ตรวจขนาดไฟล์</text>
+  <text x="500" y="320" text-anchor="middle" font-size="10" fill="#744210">≤ 10MB ?</text>
+
+  <!-- System saves Pending -->
+  <rect x="410" y="390" width="180" height="55" rx="8" fill="#ffffff" stroke="#d69e2e" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="500" y="413" text-anchor="middle" font-size="12" font-weight="500" fill="#2d3748">บันทึกคำร้องสถานะ Pending</text>
+  <text x="500" y="430" text-anchor="middle" font-size="10" fill="#718096">ส่งแจ้งเตือนส่วนตัวถึงเจ้าหน้าที่</text>
+
+  <!-- Staff reviews proof -->
+  <rect x="700" y="390" width="200" height="55" rx="8" fill="#ffffff" stroke="#dd6b20" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="800" y="413" text-anchor="middle" font-size="12" font-weight="500" fill="#2d3748">เปิดตรวจสอบหลักฐานส่วนตัว</text>
+  <text x="800" y="430" text-anchor="middle" font-size="10" fill="#718096">เทียบข้อมูลคำร้องกับสิ่งของ (UC-05)</text>
+
+  <!-- Decision: Staff verifies -->
+  <polygon points="800,490 870,525 800,560 730,525" fill="#fffaf0" stroke="#dd6b20" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="800" y="522" text-anchor="middle" font-size="11" font-weight="500" fill="#7b341e">หลักฐานถูกต้อง</text>
+  <text x="800" y="535" text-anchor="middle" font-size="10" fill="#7b341e">และตรงกัน?</text>
+
+  <!-- Staff rejects -->
+  <rect x="710" y="610" width="180" height="50" rx="8" fill="#fff5f5" stroke="#e53e3e" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="800" y="632" text-anchor="middle" font-size="11" font-weight="500" fill="#9b2c2c">ระบุเหตุผลปฏิเสธคำร้อง</text>
+  <text x="800" y="648" text-anchor="middle" font-size="10" fill="#c53030">อัปเดตสถานะเป็น Rejected</text>
+
+  <!-- End Node Rejected -->
+  <circle cx="800" cy="720" r="14" fill="none" stroke="#e53e3e" stroke-width="2" />
+  <circle cx="800" cy="720" r="8" fill="#e53e3e" />
+  <text x="800" y="750" text-anchor="middle" font-size="10" fill="#e53e3e">สิ้นสุด (คำร้องถูกปฏิเสธ)</text>
+
+  <!-- Staff approves & verifies -->
+  <rect x="410" y="570" width="180" height="55" rx="8" fill="#f0fff4" stroke="#38a169" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="500" y="593" text-anchor="middle" font-size="11" font-weight="500" fill="#22543d">อัปเดตสถานะเป็น Verified</text>
+  <text x="500" y="610" text-anchor="middle" font-size="10" fill="#276749">ส่งการนัดหมายรับสิ่งของคืน</text>
+
+  <!-- Requester claims in person -->
+  <rect x="110" y="570" width="180" height="55" rx="8" fill="#ffffff" stroke="#3182ce" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="200" y="593" text-anchor="middle" font-size="12" font-weight="500" fill="#2d3748">ติดต่อรับของ ณ ศูนย์รับของหาย</text>
+  <text x="200" y="610" text-anchor="middle" font-size="10" fill="#718096">แสดงบัตร/ตัวตนหน้างาน</text>
+
+  <!-- Staff hands over & Returned -->
+  <rect x="410" y="690" width="180" height="55" rx="8" fill="#f0fff4" stroke="#38a169" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="500" y="713" text-anchor="middle" font-size="12" font-weight="500" fill="#22543d">ส่งมอบของและบันทึกปิดงาน</text>
+  <text x="500" y="730" text-anchor="middle" font-size="10" fill="#276749">อัปเดตสถานะเป็น Returned (AC-06)</text>
+
+  <!-- End Node Success -->
+  <circle cx="500" cy="800" r="14" fill="none" stroke="#2d3748" stroke-width="2" />
+  <circle cx="500" cy="800" r="8" fill="#2d3748" />
+  <text x="500" y="825" text-anchor="middle" font-size="10" fill="#718096">สิ้นสุดกระบวนการส่งคืน</text>
+
+  <!-- Arrows -->
+  <!-- Start -> Action 1 -->
+  <line x1="200" y1="162" x2="200" y2="190" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Action 1 -> Action 2 -->
+  <line x1="200" y1="245" x2="200" y2="280" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Action 2 -> Decision 1 -->
+  <line x1="300" y1="310" x2="430" y2="310" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Decision 1 -> Loop back if > 10MB -->
+  <path d="M 500 275 L 500 250 L 250 250 L 250 280" fill="none" stroke="#e53e3e" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" />
+  <text x="375" y="243" font-size="10" fill="#e53e3e">[ไฟล์เกิน 10MB แจ้งเตือน]</text>
+
+  <!-- Decision 1 -> Save Pending -->
+  <line x1="500" y1="345" x2="500" y2="390" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrow)" />
+  <text x="508" y="368" font-size="10" fill="#38a169">[ถูกต้อง]</text>
+
+  <!-- Save Pending -> Staff reviews -->
+  <line x1="590" y1="417" x2="700" y2="417" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Staff reviews -> Decision 2 -->
+  <line x1="800" y1="445" x2="800" y2="490" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Decision 2 -> Staff rejects -->
+  <line x1="800" y1="560" x2="800" y2="610" stroke="#e53e3e" stroke-width="1.5" marker-end="url(#arrow)" />
+  <text x="808" y="585" font-size="10" fill="#e53e3e">[ไม่ถูกต้อง]</text>
+
+  <!-- Staff rejects -> End Rejected -->
+  <line x1="800" y1="660" x2="800" y2="706" stroke="#e53e3e" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Decision 2 -> Verified -->
+  <path d="M 730 525 L 500 525 L 500 570" fill="none" stroke="#38a169" stroke-width="1.5" marker-end="url(#arrow)" />
+  <text x="615" y="518" font-size="10" fill="#38a169">[ยืนยันสิทธิ์ถูกต้อง]</text>
+
+  <!-- Verified -> Requester in person -->
+  <line x1="410" y1="597" x2="290" y2="597" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Requester in person -> Staff returned -->
+  <path d="M 200 625 L 200 660 L 500 660 L 500 690" fill="none" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Staff returned -> End Node -->
+  <line x1="500" y1="745" x2="500" y2="786" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrow)" />
+</svg>

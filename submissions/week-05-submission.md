@@ -2,7 +2,8 @@
 
 - **Team / Case:** Group05 — Case 05: Campus Lost and Found
 - **Repository URL:** `https://github.com/ThanarakCSW/ENGSE206-Group05-Campus-Lost-And-Found.git`
-- **Submission commit:** Example commit message: `docs: prioritize functional and nonfunctional requirements`
+- **Submission commit:** `submit(w05): prioritized requirement backlog`
+- **Submission commit hash:** `2a4060d`
 
 ## Artefact paths
 

@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" agent="Antigravity">
+  <diagram id="activity-claim-verification" name="Claim and Verification Activity Diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Swimlanes -->
+        <mxCell id="pool" value="กระบวนการยื่นหลักฐาน ตรวจสอบ และส่งมอบสิ่งของ (UC-04, UC-05)" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=30;horizontal=0;horizontalFlip=1;fillColor=#f8f9fa;strokeColor=#4a5568;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="900" height="720" as="geometry" />
+        </mxCell>
+        <!-- Lane 1: Requester -->
+        <mxCell id="lane1" value="ผู้ทำของหาย (Requester)" style="swimlane;html=1;startSize=30;fillColor=#ebf8ff;strokeColor=#3182ce;" vertex="1" parent="pool">
+          <mxGeometry x="30" y="0" width="290" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="" style="ellipse;fillColor=#2d3748;strokeColor=none;" vertex="1" parent="lane1">
+          <mxGeometry x="130" y="50" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="act1" value="ค้นหารายการของที่พบในระบบ&#xa;และเลือกรายการที่ต้องการขอคืน" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#3182ce;" vertex="1" parent="lane1">
+          <mxGeometry x="55" y="110" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="act2" value="ยื่นคำร้องยืนยันความเป็นเจ้าของ&#xa;แนบไฟล์หลักฐาน (UC-04)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#3182ce;" vertex="1" parent="lane1">
+          <mxGeometry x="55" y="200" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="act6" value="ติดต่อรับของ ณ ศูนย์รับของหาย&#xa;แสดงบัตร/ตัวตนหน้างาน" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#3182ce;" vertex="1" parent="lane1">
+          <mxGeometry x="55" y="470" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Lane 2: System -->
+        <mxCell id="lane2" value="ระบบส่วนกลาง (System)" style="swimlane;html=1;startSize=30;fillColor=#fefcbf;strokeColor=#d69e2e;" vertex="1" parent="pool">
+          <mxGeometry x="320" y="0" width="280" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="dec1" value="ตรวจขนาดไฟล์&#xa;≤ 10MB ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fffaf0;strokeColor=#d69e2e;" vertex="1" parent="lane2">
+          <mxGeometry x="85" y="195" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="act3" value="บันทึกคำร้องสถานะ Pending&#xa;ส่งแจ้งเตือนส่วนตัวถึงเจ้าหน้าที่" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d69e2e;" vertex="1" parent="lane2">
+          <mxGeometry x="50" y="295" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="act5" value="อัปเดตสถานะเป็น Verified&#xa;ส่งการนัดหมายรับสิ่งของคืน" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fff4;strokeColor=#38a169;" vertex="1" parent="lane2">
+          <mxGeometry x="50" y="470" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="act7" value="บันทึกปิดงานสถานะ Returned&#xa;(AC-06)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fff4;strokeColor=#38a169;" vertex="1" parent="lane2">
+          <mxGeometry x="50" y="570" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="endSuccess" value="" style="ellipse;shape=doubleEllipse;fillColor=#2d3748;strokeColor=#2d3748;" vertex="1" parent="lane2">
+          <mxGeometry x="125" y="650" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Lane 3: Staff -->
+        <mxCell id="lane3" value="เจ้าหน้าที่ศูนย์รับของหาย (Staff)" style="swimlane;html=1;startSize=30;fillColor=#feebc8;strokeColor=#dd6b20;" vertex="1" parent="pool">
+          <mxGeometry x="600" y="0" width="300" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="act4" value="เปิดตรวจสอบหลักฐานส่วนตัว&#xa;เทียบข้อมูลคำร้องกับสิ่งของ (UC-05)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#dd6b20;" vertex="1" parent="lane3">
+          <mxGeometry x="60" y="295" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dec2" value="หลักฐานถูกต้อง&#xa;และตรงกัน?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fffaf0;strokeColor=#dd6b20;" vertex="1" parent="lane3">
+          <mxGeometry x="95" y="390" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="actReject" value="ระบุเหตุผลและอัปเดต&#xa;สถานะเป็น Rejected" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff5f5;strokeColor=#e53e3e;" vertex="1" parent="lane3">
+          <mxGeometry x="60" y="490" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="endReject" value="" style="ellipse;shape=doubleEllipse;fillColor=#e53e3e;strokeColor=#e53e3e;" vertex="1" parent="lane3">
+          <mxGeometry x="135" y="580" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Transitions / Edges -->
+        <mxCell id="e1" edge="1" parent="1" source="start" target="act1" style="endArrow=block;endFill=1;strokeColor=#4a5568;" />
+        <mxCell id="e2" edge="1" parent="1" source="act1" target="act2" style="endArrow=block;endFill=1;strokeColor=#4a5568;" />
+        <mxCell id="e3" edge="1" parent="1" source="act2" target="dec1" style="endArrow=block;endFill=1;strokeColor=#4a5568;" />
+        <mxCell id="e4" edge="1" parent="1" source="dec1" target="act3" style="endArrow=block;endFill=1;strokeColor=#4a5568;" value="[ขนาดไฟล์ ≤ 10MB]" />
+        <mxCell id="e5" edge="1" parent="1" source="dec1" target="act2" style="endArrow=block;endFill=1;strokeColor=#e53e3e;dashed=1;" value="[เกิน 10MB แจ้งเตือน]">
+          <Array as="points">
+            <mxPoint x="430" y="270" />
+            <mxPoint x="250" y="270" />
+          </Array>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="act3" target="act4" style="endArrow=block;endFill=1;strokeColor=#4a5568;" />
+        <mxCell id="e7" edge="1" parent="1" source="act4" target="dec2" style="endArrow=block;endFill=1;strokeColor=#4a5568;" />
+        <mxCell id="e8" edge="1" parent="1" source="dec2" target="actReject" style="endArrow=block;endFill=1;strokeColor=#e53e3e;" value="[ไม่ถูกต้อง]">
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="actReject" target="endReject" style="endArrow=block;endFill=1;strokeColor=#e53e3e;" />
+        <mxCell id="e10" edge="1" parent="1" source="dec2" target="act5" style="endArrow=block;endFill=1;strokeColor=#38a169;" value="[ถูกต้อง]">
+          <Array as="points">
+            <mxPoint x="750" y="495" />
+          </Array>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="act5" target="act6" style="endArrow=block;endFill=1;strokeColor=#4a5568;" />
+        <mxCell id="e12" edge="1" parent="1" source="act6" target="act7" style="endArrow=block;endFill=1;strokeColor=#4a5568;">
+          <Array as="points">
+            <mxPoint x="185" y="635" />
+            <mxPoint x="450" y="635" />
+          </Array>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="act7" target="endSuccess" style="endArrow=block;endFill=1;strokeColor=#4a5568;" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -9,12 +9,12 @@ Team Repo นี้รับคำสั่งงานจาก Course/Lab Repo
 
 | Field | Value |
 |---|---|
-| Semester | [กรอก] |
-| Group | [Group XX] |
-| Case ID | [01–10] |
-| Case URL | [วาง URL] |
-| Course assignment branch | `main` หรือที่อาจารย์กำหนด |
-| Last checked | [YYYY-MM-DD] |
+| Semester | 1/2569 |
+| Group | Group 05 |
+| Case ID | Case 05 |
+| Case URL | https://github.com/se-rmutl/engse206-lab/blob/main/cases/05-campus-lost-and-found.md |
+| Course assignment branch | `main` |
+| Last checked | 2026-10-24 |
 
 ## กฎ
 
