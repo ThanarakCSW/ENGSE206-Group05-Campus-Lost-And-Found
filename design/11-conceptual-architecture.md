@@ -1,33 +1,33 @@
-# 11 — Conceptual Architecture
+# Conceptual Architecture — [ชื่อระบบ] (ไม่บังคับ)
 
-> **Week 11 deliverable**
+> ไฟล์นี้เป็นทางเลือก ใช้สรุปสั้นให้อ่านบน GitHub ได้ · เอกสารหลักคือ `design/11-conceptual-architecture-v0.1.docx`
+> ถ้าข้อความในไฟล์นี้ไม่ตรงกับไฟล์ Word ให้ถือไฟล์ Word เป็นหลัก
 
-## 1. Architecture Overview
+| รายการ | ค่า |
+|---|---|
+| ฐาน SRS | `docs/07-srs-v1` สถานะ [Draft / Needs Revision / Baseline Candidate] |
+| เอกสารหลัก | [11-conceptual-architecture-v0.1.docx](11-conceptual-architecture-v0.1.docx) |
 
-[อธิบายสั้น ๆ ว่าระบบแบ่งหน้าที่/ชั้น/องค์ประกอบอย่างไร]
+## ภาพ
 
-## 2. Architecture View
+![Context](../diagrams/architecture/11-context.png)
 
-![Conceptual Architecture](../diagrams/architecture/conceptual-architecture.png)
+![Container](../diagrams/architecture/11-container.png)
 
-## 3. Components / Modules
+## Container (สรุปจากหัวข้อ 3–4)
 
-| Component | Responsibilities | Inputs/Outputs | Related Requirements |
+| Container | [ชนิด · เทคโนโลยี] | หน้าที่ | รันที่ไหน / ใครควบคุม |
 |---|---|---|---|
-| [Component] | [กรอก] | [กรอก] | FR-xx |
+| | | | |
 
-## 4. Data and External Dependencies
+## Decision cards (สถานะ Proposed)
 
-| Dependency | Purpose | Risks / Constraints | Related Design Decision |
+| ID | ตัดสินใจ | เพราะ (NFR / driver) |
+|---|---|---|
+| DEC-01 | | |
+
+## Open decisions ที่เปิดอยู่
+
+| ID | เรื่อง | ระหว่างรอทำอย่างไร | เจ้าของคำตอบ |
 |---|---|---|---|
-| [กรอก] | [กรอก] | [กรอก] | D-xx |
-
-## 5. Architecture Rationale
-
-- [เหตุผลที่เลือก architecture นี้]
-- [ข้อดี/ข้อจำกัด]
-
-## 6. Quality Attribute Evaluation Questions
-
-- [เช่น การออกแบบนี้ช่วยให้ข้อมูลการจองไม่ซ้ำกันได้อย่างไร?]
-- [เช่น ผู้ใช้บนมือถือเข้าถึงได้อย่างไร?]
+| | | | |
